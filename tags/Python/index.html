@@ -159,6 +159,72 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-01-06T11:40:11.762Z">2020-01-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 分钟 读完 (大约 1337 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/变量与运算符/">变量与运算符</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>概念：变量是在程序中开辟空间存储数据用的<br>语法：变量名 = 值<br>说明：变量名由程序员自己命名<br>变量名命名要求：为标识符，但不能是关键字；而且要遵守PEP8命名规范(即变量名中所有的字母都小写，如果由多个单词组成，单词之间用下划线隔开；在命名时，要做到见名知义，看见变量名大概知道变量名中存储的是什么数据)<br>=： 赋值符号，将右边的值赋给左边的变量<br>值：任何有结果的表达式，可以是具体的数据，也可以是赋值过的变量，也可以是运算表达式<br>   <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="hljs-number">100</span></span><br><span class="line">name = <span class="hljs-string">"小明"</span></span><br><span class="line">num2 = num</span><br><span class="line"><span class="hljs-comment"># 修改变量num的值</span></span><br><span class="line">num = <span class="hljs-number">200</span></span><br><span class="line"><span class="hljs-comment"># 变量可以存储不同的数据类型</span></span><br><span class="line">num = <span class="hljs-string">"mark"</span></span><br><span class="line"><span class="hljs-comment"># 变量必须先声明/赋值再使用</span></span><br><span class="line"><span class="hljs-comment"># 同时声明声明多个变量，赋相同的值：变量名1=变量名2=变量名3= ... = 值</span></span><br><span class="line">a = b = c = <span class="hljs-number">10</span></span><br><span class="line">print(a, b, c)</span><br><span class="line"><span class="hljs-comment"># 同时声明多个变量，赋不相同的值：变量名1， 变量名2， 变量名3， ...  = 值1， 值2， 值3，...</span></span><br><span class="line">name, age, gender = <span class="hljs-string">"铭"</span>, <span class="hljs-number">22</span>, <span class="hljs-string">"man"</span></span><br><span class="line">print(name, age, gender)</span><br></pre></td></tr></table></figure></p>
+<h6 id="声明变量和给变量赋值的原理（重要）"><a href="#声明变量和给变量赋值的原理（重要）" class="headerlink" title="声明变量和给变量赋值的原理（重要）"></a>声明变量和给变量赋值的原理（重要）</h6><p>先在内存中开辟空间存储数据，（内存空间的大小由数据的大小动态分配），然后再将保存数据的内存空间的地址赋给变量<br>用一个变量给另一个变量赋值的时候，实质是将变量中的地址赋给新的变量</p>
+<h3 id="运算符：数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符"><a href="#运算符：数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符" class="headerlink" title="运算符：数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符"></a>运算符：数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符</h3><p>运算符的优先级：数学运算符&gt;比较运算符&gt;逻辑运算符&gt;赋值运算符&gt;位运算符<br>数学运算符的优先级：** &gt; * &gt; / &gt; // &gt; % &gt; + &gt; -</p>
+<p>#####逻辑运算符：and(逻辑与运算), or(逻辑或运算), not(逻辑非运算)<br>所有的逻辑运算符的运算对象是布尔，结果也是布尔</p>
+<h6 id="and"><a href="#and" class="headerlink" title="and:"></a>and:</h6><p>a.运算规则：两个都为True结果才是True，只要一个是False结果就是False<br>b.什么时候用：当希望多个条件同时满足的时候，就用and将多个条件连接，and相当于生活中的并且</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">grade = <span class="hljs-number">4</span></span><br><span class="line">score = <span class="hljs-number">88</span></span><br><span class="line"><span class="hljs-comment"># 1）条件：grade&gt;=4并且score&gt;=90</span></span><br><span class="line">print(grade &gt;= <span class="hljs-number">3.5</span> <span class="hljs-keyword">and</span> score &gt;= <span class="hljs-number">90</span>)</span><br></pre></td></tr></table></figure>
+
+<h6 id="or"><a href="#or" class="headerlink" title="or:"></a>or:</h6><p>a.运算规则：两个都为False结果才为False，只要有一个是True结果就是True<br>b.什么时候用：当希望多个条件只要有一个满足的时候，就用or将多个条件连接，or相当于生活中的或者</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">grade = <span class="hljs-number">4</span></span><br><span class="line">score = <span class="hljs-number">88</span></span><br><span class="line"><span class="hljs-comment"># 1）条件：grade&gt;=4并且score&gt;=90</span></span><br><span class="line">print(grade &gt;= <span class="hljs-number">3.5</span> <span class="hljs-keyword">or</span> score &gt;= <span class="hljs-number">95</span>)</span><br></pre></td></tr></table></figure>
+
+<h6 id="not"><a href="#not" class="headerlink" title="not:"></a>not:</h6><p>a.运算规则：True变False， False变True<br>b.什么时候使用：对某个条件进行否定</p>
+<p>######短路操作<br>逻辑与运算的短路操作：当and前面的表达式的值是False的时候，程序不会再去执行and后面的表达式<br>逻辑或运算的短路操作：当or前面的表达式的值是True的时候，程序不会再去执行or后面的表达式</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">练习<span class="hljs-number">1</span></span><br><span class="line"><span class="hljs-comment"># 1）判断一个数能否被2或者5整除</span></span><br><span class="line">num1 = int(input(<span class="hljs-string">"please input a number:"</span>))</span><br><span class="line">print(num1 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> num1 % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>)</span><br><span class="line"><span class="hljs-comment"># 2）判断一个数是否能同时被2和5整除</span></span><br><span class="line">print(num1 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> num1 % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>)</span><br><span class="line"><span class="hljs-comment"># 3）判断一个数是否是3或者7的倍数，并且这个数的末尾不是3</span></span><br><span class="line">print((num1 % <span class="hljs-number">3</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> num1 % <span class="hljs-number">7</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> num1 % <span class="hljs-number">10</span> != <span class="hljs-number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<h5 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符: =, +=, -=, =, /=, %=, //=, *="></a>赋值运算符: =, +=, -=, <em>=, /=, %=, //=, *</em>=</h5><p>不管是什么样的赋值运算符，最终的操作都是给变量赋值；所以赋值运算符的左边必须是变量<br>复合和赋值运算符：先将赋值符号左边变量中的值取出来，然后进行指定的运算，最后将运算结果再从新赋值给左边的变量<br>注意：复合的赋值运算符的左边必须是已经赋值过的变量</p>
+<h5 id="位运算：-amp-按位与运算-，-按位或运算-，-按位异或-，-按位取反-，-lt-lt-左移-，-gt-gt-右移"><a href="#位运算：-amp-按位与运算-，-按位或运算-，-按位异或-，-按位取反-，-lt-lt-左移-，-gt-gt-右移" class="headerlink" title="位运算：&amp;(按位与运算)， |(按位或运算)，^(按位异或)， ~(按位取反)， &lt;&lt;(左移)， &gt;&gt;(右移)"></a>位运算：&amp;(按位与运算)， |(按位或运算)，^(按位异或)， ~(按位取反)， &lt;&lt;(左移)， &gt;&gt;(右移)</h5><h6 id="1、按位与"><a href="#1、按位与" class="headerlink" title="1、按位与"></a>1、按位与</h6><p>数字1 &amp; 数字2 –&gt; 两个数字补码上相同位置上的数，如果都是1结果就是1， 如果有一个是0结果就是0<br>1 &amp; 1 -&gt;1<br>1 &amp; 0 -&gt;0<br>0 &amp; 1 -&gt;0<br>0 &amp; 0 -&gt;0</p>
+<h6 id="2、按位或"><a href="#2、按位或" class="headerlink" title="2、按位或"></a>2、按位或</h6><p>数字1 | 数字2 –&gt; 两个数字补码上相同位置上的值如果都是0结果才是0，只要有一个1结果就是1<br>1 | 1 -&gt;1<br>1 | 0 -&gt;1<br>0 | 1 -&gt;1<br>0 | 0 -&gt;0</p>
+<h6 id="3、按位取反"><a href="#3、按位取反" class="headerlink" title="3、按位取反"></a>3、按位取反</h6><p>~数字 –&gt; 将数字补码上的每一位的值由0变成1，1变成0<br>~1 -&gt;0<br>~0 -&gt;1</p>
+<h6 id="4、按位异或"><a href="#4、按位异或" class="headerlink" title="4、按位异或"></a>4、按位异或</h6><p>数字1 ^ 数字2 –&gt; 两个数补码上相同位置上的值，如果相同结果是0，不同结果是1<br>1 ^ 1 -&gt; 0<br>1 ^ 0 -&gt; 1<br>0 ^ 1 -&gt; 1<br>0 ^ 0 -&gt; 0<br>特点：一个数异或同一个数两次，结果就是这个本身</p>
+<h6 id="5、左移"><a href="#5、左移" class="headerlink" title="5、左移"></a>5、左移</h6><p>数字 &lt;&lt; N –&gt; 让数字的补码整体左移N位，低位用0补充（数字* （2**N））</p>
+<h6 id="6、右移"><a href="#6、右移" class="headerlink" title="6、右移"></a>6、右移</h6><p>数字 &gt;&gt; N –&gt; 让数字的补码整体右移N位，正数高位补0，负数高位补1（数字//（2**N））</p>
+<h6 id="应用："><a href="#应用：" class="headerlink" title="应用："></a>应用：</h6><p>1、乘2的次方或者整除2的次方的操作(&lt;&lt;, &gt;&gt;)<br>2、数字 &amp; 1 == 0 -&gt; 偶数；数字 &amp; 1 == 1 -&gt; 奇数</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-12-31T14:02:05.000Z">2019-12-31</time>
                 
                 <div class="level-item">
@@ -169,7 +235,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分钟 读完 (大约 1242 个字)
+                    7 分钟 读完 (大约 1054 个字)
                 </span>
                 
                 
@@ -213,11 +279,6 @@
 
 <h3 id="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"><a href="#计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码" class="headerlink" title="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"></a>计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码</h3><p>位(bit)<br>1字节(byte) = 8bit<br>1kb = 1024byte<br>1M = 1024kb<br>1G = 1024M<br>1T = 1024G</p>
 <h6 id="注意：正数的原码、反码、补码一样"><a href="#注意：正数的原码、反码、补码一样" class="headerlink" title="注意：正数的原码、反码、补码一样"></a>注意：正数的原码、反码、补码一样</h6><p>1、原码 = 符号位(0表示正，1表示负) + 真值(数字转换成二进制的值)<br>10 -&gt; 1010(真值) -&gt;1010<br>10的原码:00000000 00000000 00000000 00001010<br>-10的原码:10000000 00000000 00000000 00001010<br>2、负数的反码:符号为不变，其他位取反(0变1，1变0)<br>10的反码:00000000 00000000 00000000 00001010<br>-10的反码:11111111 11111111 11111111 11110101<br>3、负数的补码:反码加1<br>10的补码:00000000 00000000 00000000 00001010<br>-10的补码:11111111 11111111 11111111 11110110</p>
-<p>4、计算机负数采用补码的原因：计算机没有减法器，负数采用原码进行加法运算的时候结果不对，采用补码结果才对</p>
-<h3 id="python支持的运算符-数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符"><a href="#python支持的运算符-数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符" class="headerlink" title="python支持的运算符:数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符"></a>python支持的运算符:数学运算符、比较运算符、逻辑运算符、位运算、赋值运算符</h3><p>1、数学运算符: +, -, <em>, /, %, //, *</em></p>
-<h6 id="用法"><a href="#用法" class="headerlink" title="%用法"></a>%用法</h6><p>a.判断一个数的奇偶性：让数字对2取余，看结果是1还是0<br>b.判断一个数能否被另一个数整除<br>c.取一个数的后面几位</p>
-<h6 id="利用-、-可以取一个数中的任意一位数字"><a href="#利用-、-可以取一个数中的任意一位数字" class="headerlink" title="利用%、//可以取一个数中的任意一位数字"></a>利用%、//可以取一个数中的任意一位数字</h6><p>2、比较运算符&gt;, &lt;, &gt;=, &lt;=, ==, !=</p>
-<p>所有比较运算符的结果都是布尔值（不是True就是False）</p>
 
         </div>
         
@@ -406,7 +467,7 @@
                 <span class="level-item">Python基础</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li>
             </ul>
@@ -439,16 +500,16 @@
             
             <a href="/变量与运算符/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="变量与运算符">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-06T11:23:30.361Z">2020-01-06</time></div>
-                    <a href="/变量与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal"></a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-06T11:40:11.762Z">2020-01-06</time></div>
+                    <a href="/变量与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">变量与运算符</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
                     </p>
                 </div>
             </div>
@@ -523,7 +584,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -554,16 +615,16 @@
             
             <a href="/变量与运算符/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="变量与运算符">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-06T11:23:30.361Z">2020-01-06</time></div>
-                    <a href="/变量与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal"></a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-06T11:40:11.762Z">2020-01-06</time></div>
+                    <a href="/变量与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">变量与运算符</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
                     </p>
                 </div>
             </div>
@@ -638,7 +699,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
