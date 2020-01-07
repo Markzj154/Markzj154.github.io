@@ -19,7 +19,7 @@
 <meta property="og:description" content="print()函数print()函数，功能是在控制台输入括号中的内容 1print(&quot;hello world!&quot;)  注释注释是代码中对代码进行解释和说明的文本内容；不会影响程序的功能和执行">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/article-images/python.jpg">
-<meta property="og:updated_time" content="2020-01-07T10:18:42.638Z">
+<meta property="og:updated_time" content="2020-01-07T10:55:33.336Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="进制">
 <meta name="twitter:description" content="print()函数print()函数，功能是在控制台输入括号中的内容 1print(&quot;hello world!&quot;)  注释注释是代码中对代码进行解释和说明的文本内容；不会影响程序的功能和执行">
@@ -203,10 +203,11 @@
 <h3 id="print和input"><a href="#print和input" class="headerlink" title="print和input"></a>print和input</h3><p>print函数:输出函数，在控制台打印print后面括号中的内容的结果<br>input函数:获取从控制台输入的的内容(输入回车的时候就完成)<br>input(提示信息)；不管在键盘上输入的是什么，input返回的结果的类型都是字符串类型</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">value = input(<span class="hljs-string">'hello world:'</span>)</span><br><span class="line">print(value, type(value))</span><br></pre></td></tr></table></figure>
 
-<h3 id="计算机只能存储和处理二进制数据"><a href="#计算机只能存储和处理二进制数据" class="headerlink" title="计算机只能存储和处理二进制数据"></a>计算机只能存储和处理二进制数据</h3><p>int类型–包含所有的整数，整数可可以表示为十进制、二进制、八进制和十六进制<br>十进制<br>a.基数:0,1,2,3,4,5,6,7,8,9<br>b.进位:逢十进一<br>c.位权:123 = 100 + 20 + 3 = 1<em>10^2 + 2</em>10^1 + 3*10^0<br>d.表示方式:默认写入为十进制</p>
-<p>二进制<br>a.基数:0, 1<br>b.进位:逢二进一<br>c.位权:111(2) = 1<em>2^2 + 1</em>2^1 + 1*2^0 = 7(10)<br>d.表示方式:在二进制数前加上前缀0b或0B<br>e.转换:直接打印</p>
-<p>八进制<br>a.基数:0, 1, 2, 3, 4, 5, 6, 7<br>b.进位:逢八进一<br>c.位权:111(8) = 1<em>8^2 + 1</em>8^1 + 1*8^0 = 73(10)<br>d.表示方式:在八进制数前加上前缀0o或者0O<br>e.转换:oct()</p>
-<p>十六进制<br>a.基数:0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A/a, B/b, C/c, D/d, E/e, F/f<br>b.进位:逢十六进一<br>c.位权:111(16) = 1<em>16^2 + 1</em>16^1 + 1*16^0 = 273(273)<br>d.表示方式:在十六进制数前加上前缀0x或0X<br>e.转换:hex()</p>
+<h3 id="计算机只能存储和处理二进制数据"><a href="#计算机只能存储和处理二进制数据" class="headerlink" title="计算机只能存储和处理二进制数据"></a>计算机只能存储和处理二进制数据</h3><p>int类型–包含所有的整数，整数可可以表示为十进制、二进制、八进制和十六进制</p>
+<h6 id="十进制"><a href="#十进制" class="headerlink" title="十进制"></a>十进制</h6><p>a.基数:0,1,2,3,4,5,6,7,8,9<br>b.进位:逢十进一<br>c.位权:123 = 100 + 20 + 3 = 1<em>10^2 + 2</em>10^1 + 3*10^0<br>d.表示方式:默认写入为十进制</p>
+<h6 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h6><p>a.基数:0, 1<br>b.进位:逢二进一<br>c.位权:111(2) = 1<em>2^2 + 1</em>2^1 + 1*2^0 = 7(10)<br>d.表示方式:在二进制数前加上前缀0b或0B<br>e.转换:直接打印</p>
+<h6 id="八进制"><a href="#八进制" class="headerlink" title="八进制"></a>八进制</h6><p>a.基数:0, 1, 2, 3, 4, 5, 6, 7<br>b.进位:逢八进一<br>c.位权:111(8) = 1<em>8^2 + 1</em>8^1 + 1*8^0 = 73(10)<br>d.表示方式:在八进制数前加上前缀0o或者0O<br>e.转换:oct()</p>
+<h6 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h6><p>a.基数:0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A/a, B/b, C/c, D/d, E/e, F/f<br>b.进位:逢十六进一<br>c.位权:111(16) = 1<em>16^2 + 1</em>16^1 + 1*16^0 = 273(273)<br>d.表示方式:在十六进制数前加上前缀0x或0X<br>e.转换:hex()</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">num_2 = <span class="hljs-number">0b1101</span></span><br><span class="line">print(<span class="hljs-string">'转二进制'</span>, bin(<span class="hljs-number">100</span>), bin(<span class="hljs-number">0o100</span>), bin(<span class="hljs-number">0x100e</span>))</span><br><span class="line">print(num_2)</span><br><span class="line">num_8 = <span class="hljs-number">0o67</span></span><br><span class="line">print(<span class="hljs-string">'转八进制'</span>, oct(<span class="hljs-number">0b100</span>), oct(<span class="hljs-number">100</span>), oct(<span class="hljs-number">0x100e</span>))</span><br><span class="line">print(num_8)</span><br><span class="line">num_16 = <span class="hljs-number">0xe34a</span></span><br><span class="line">print(<span class="hljs-string">'转十六进制'</span>, hex(<span class="hljs-number">100</span>), hex(<span class="hljs-number">0o100</span>), hex(<span class="hljs-number">0b100</span>))</span><br><span class="line">print(num_16)</span><br></pre></td></tr></table></figure>
 
 <h3 id="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"><a href="#计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码" class="headerlink" title="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"></a>计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码</h3><p>位(bit)<br>1字节(byte) = 8bit<br>1kb = 1024byte<br>1M = 1024kb<br>1G = 1024M<br>1T = 1024G</p>
