@@ -146,6 +146,87 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/进制与运算符/" class="image is-7by1">
+            <img class="thumbnail" src="/article-images/python.jpg" alt="进制">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-01-07T08:47:46.774Z">2020-01-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 分钟 读完 (大约 1054 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/进制与运算符/">进制</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="print-函数"><a href="#print-函数" class="headerlink" title="print()函数"></a>print()函数</h3><p>print()函数，功能是在控制台输入括号中的内容</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="hljs-string">"hello world!"</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>注释是代码中对代码进行解释和说明的文本内容；不会影响程序的功能和执行<br>单行注释：在一行文字的前面加#<br>多行注释：将注释内容写在三个双引号或三个单引号里面（但一般使用三个双引号）</p>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>一条语句占一行，语句结束后不用加分号<br>如果一行要显示多行语句，语句必须用分号隔开</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num_1 = <span class="hljs-number">1</span></span><br><span class="line">num_2 = <span class="hljs-number">2</span> ; num_3 = <span class="hljs-number">3</span></span><br></pre></td></tr></table></figure>
+
+<p>如果一条语句很长，需要多行显示的时候，可以在与语句中\然后再换行（注意：不能破坏数据本身）</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num1 = <span class="hljs-number">12</span> + <span class="hljs-number">2</span> + <span class="hljs-number">23</span> - <span class="hljs-number">34</span>\</span><br><span class="line">      - <span class="hljs-number">22</span> + <span class="hljs-number">2</span></span><br><span class="line">print(num1)</span><br></pre></td></tr></table></figure>
+
+<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><p>python中一行代码的开头不能随便的加缩进（空格或者制表符）<br>python语法要求必须要有缩进的位置一定要加缩进</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">if</span> num &gt; <span class="hljs-number">10</span>:</span><br><span class="line">  print(num)</span><br><span class="line">  <span class="hljs-keyword">else</span>:</span><br><span class="line">      print(<span class="hljs-literal">None</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>标识符是用来命名用的，一般是给变量命名、函数命名或者类命名……<br>标识符规则：所有标识符都必须是由字母、数字、下划线组成；不能以数字开头<br>注意：python2.x以后，标识符中可以出现中文、日语、韩语等符号，但是实际开发不建议使用</p>
+<h3 id="关键字（保留字）"><a href="#关键字（保留字）" class="headerlink" title="关键字（保留字）"></a>关键字（保留字）</h3><p>关键字就是python中有特殊功能和特殊意义的标识符</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> keyword</span><br><span class="line">print(keyword.kwlist)</span><br><span class="line"><span class="hljs-string">"""</span></span><br><span class="line"><span class="hljs-string">['False', 'None', 'True', 'and', 'as', 'assert',</span></span><br><span class="line"><span class="hljs-string">'break', 'class', 'continue', 'def', 'del', 'elif',</span></span><br><span class="line"><span class="hljs-string">'else', 'except', 'finally', 'for', 'from',</span></span><br><span class="line"><span class="hljs-string">'global', 'if', 'import', 'in', 'is', 'lambda',</span></span><br><span class="line"><span class="hljs-string">'nonlocal', 'not', 'or', 'pass', 'raise',</span></span><br><span class="line"><span class="hljs-string">'return', 'try', 'while', 'with', 'yield']</span></span><br><span class="line"><span class="hljs-string">"""</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常见数据类型和数据"><a href="#常见数据类型和数据" class="headerlink" title="常见数据类型和数据"></a>常见数据类型和数据</h3><p>数字数据：整型(int)、浮点型(float)<br>字符串(str)：用双引号或者单引号将文本数据引起来<br>布尔(bool)：只有False、True两个值，True代表真/肯定，False代表假/否定<br>列表(list)、元组(tuple)、集合(set)、字典(dict)、函数(function)等<br>类型转换：类型名（数据）-&gt;将括号中的数据转换成指定的类型并返回</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(int(<span class="hljs-number">2.33</span>))</span><br><span class="line">print(float(<span class="hljs-number">10</span>))</span><br></pre></td></tr></table></figure>
+
+<h3 id="print和input"><a href="#print和input" class="headerlink" title="print和input"></a>print和input</h3><p>print函数:输出函数，在控制台打印print后面括号中的内容的结果<br>input函数:获取从控制台输入的的内容(输入回车的时候就完成)<br>input(提示信息)；不管在键盘上输入的是什么，input返回的结果的类型都是字符串类型</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">value = input(<span class="hljs-string">'hello world:'</span>)</span><br><span class="line">print(value, type(value))</span><br></pre></td></tr></table></figure>
+
+<h3 id="计算机只能存储和处理二进制数据"><a href="#计算机只能存储和处理二进制数据" class="headerlink" title="计算机只能存储和处理二进制数据"></a>计算机只能存储和处理二进制数据</h3><p>int类型–包含所有的整数，整数可可以表示为十进制、二进制、八进制和十六进制<br>十进制<br>a.基数:0,1,2,3,4,5,6,7,8,9<br>b.进位:逢十进一<br>c.位权:123 = 100 + 20 + 3 = 1<em>10^2 + 2</em>10^1 + 3*10^0<br>d.表示方式:默认写入为十进制</p>
+<p>二进制<br>a.基数:0, 1<br>b.进位:逢二进一<br>c.位权:111(2) = 1<em>2^2 + 1</em>2^1 + 1*2^0 = 7(10)<br>d.表示方式:在二进制数前加上前缀0b或0B<br>e.转换:直接打印</p>
+<p>八进制<br>a.基数:0, 1, 2, 3, 4, 5, 6, 7<br>b.进位:逢八进一<br>c.位权:111(8) = 1<em>8^2 + 1</em>8^1 + 1*8^0 = 73(10)<br>d.表示方式:在八进制数前加上前缀0o或者0O<br>e.转换:oct()</p>
+<p>十六进制<br>a.基数:0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A/a, B/b, C/c, D/d, E/e, F/f<br>b.进位:逢十六进一<br>c.位权:111(16) = 1<em>16^2 + 1</em>16^1 + 1*16^0 = 273(273)<br>d.表示方式:在十六进制数前加上前缀0x或0X<br>e.转换:hex()</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">num_2 = <span class="hljs-number">0b1101</span></span><br><span class="line">print(<span class="hljs-string">'转二进制'</span>, bin(<span class="hljs-number">100</span>), bin(<span class="hljs-number">0o100</span>), bin(<span class="hljs-number">0x100e</span>))</span><br><span class="line">print(num_2)</span><br><span class="line">num_8 = <span class="hljs-number">0o67</span></span><br><span class="line">print(<span class="hljs-string">'转八进制'</span>, oct(<span class="hljs-number">0b100</span>), oct(<span class="hljs-number">100</span>), oct(<span class="hljs-number">0x100e</span>))</span><br><span class="line">print(num_8)</span><br><span class="line">num_16 = <span class="hljs-number">0xe34a</span></span><br><span class="line">print(<span class="hljs-string">'转十六进制'</span>, hex(<span class="hljs-number">100</span>), hex(<span class="hljs-number">0o100</span>), hex(<span class="hljs-number">0b100</span>))</span><br><span class="line">print(num_16)</span><br></pre></td></tr></table></figure>
+
+<h3 id="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"><a href="#计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码" class="headerlink" title="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"></a>计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码</h3><p>位(bit)<br>1字节(byte) = 8bit<br>1kb = 1024byte<br>1M = 1024kb<br>1G = 1024M<br>1T = 1024G</p>
+<h6 id="注意：正数的原码、反码、补码一样"><a href="#注意：正数的原码、反码、补码一样" class="headerlink" title="注意：正数的原码、反码、补码一样"></a>注意：正数的原码、反码、补码一样</h6><p>1、原码 = 符号位(0表示正，1表示负) + 真值(数字转换成二进制的值)<br>10 -&gt; 1010(真值) -&gt;1010<br>10的原码:00000000 00000000 00000000 00001010<br>-10的原码:10000000 00000000 00000000 00001010<br>2、负数的反码:符号为不变，其他位取反(0变1，1变0)<br>10的反码:00000000 00000000 00000000 00001010<br>-10的反码:11111111 11111111 11111111 11110101<br>3、负数的补码:反码加1<br>10的补码:00000000 00000000 00000000 00001010<br>-10的补码:11111111 11111111 11111111 11110110</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/变量与运算符/" class="image is-7by1">
             <img class="thumbnail" src="/article-images/python.jpg" alt="变量与运算符">
         </a>
@@ -200,87 +281,6 @@
 <h6 id="5、左移"><a href="#5、左移" class="headerlink" title="5、左移"></a>5、左移</h6><p>数字 &lt;&lt; N –&gt; 让数字的补码整体左移N位，低位用0补充（数字* （2**N））</p>
 <h6 id="6、右移"><a href="#6、右移" class="headerlink" title="6、右移"></a>6、右移</h6><p>数字 &gt;&gt; N –&gt; 让数字的补码整体右移N位，正数高位补0，负数高位补1（数字//（2**N））</p>
 <h6 id="应用："><a href="#应用：" class="headerlink" title="应用："></a>应用：</h6><p>1、乘2的次方或者整除2的次方的操作(&lt;&lt;, &gt;&gt;)<br>2、数字 &amp; 1 == 0 -&gt; 偶数；数字 &amp; 1 == 1 -&gt; 奇数</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/进制与运算符/" class="image is-7by1">
-            <img class="thumbnail" src="/article-images/python.jpg" alt="进制与运算符">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-31T14:02:05.000Z">2019-12-31</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 分钟 读完 (大约 1054 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/进制与运算符/">进制与运算符</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="print-函数"><a href="#print-函数" class="headerlink" title="print()函数"></a>print()函数</h3><p>print()函数，功能是在控制台输入括号中的内容</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="hljs-string">"hello world!"</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>注释是代码中对代码进行解释和说明的文本内容；不会影响程序的功能和执行<br>单行注释：在一行文字的前面加#<br>多行注释：将注释内容写在三个双引号或三个单引号里面（但一般使用三个双引号）</p>
-<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>一条语句占一行，语句结束后不用加分号<br>如果一行要显示多行语句，语句必须用分号隔开</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num_1 = <span class="hljs-number">1</span></span><br><span class="line">num_2 = <span class="hljs-number">2</span> ; num_3 = <span class="hljs-number">3</span></span><br></pre></td></tr></table></figure>
-
-<p>如果一条语句很长，需要多行显示的时候，可以在与语句中\然后再换行（注意：不能破坏数据本身）</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num1 = <span class="hljs-number">12</span> + <span class="hljs-number">2</span> + <span class="hljs-number">23</span> - <span class="hljs-number">34</span>\</span><br><span class="line">      - <span class="hljs-number">22</span> + <span class="hljs-number">2</span></span><br><span class="line">print(num1)</span><br></pre></td></tr></table></figure>
-
-<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><p>python中一行代码的开头不能随便的加缩进（空格或者制表符）<br>python语法要求必须要有缩进的位置一定要加缩进</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">if</span> num &gt; <span class="hljs-number">10</span>:</span><br><span class="line">  print(num)</span><br><span class="line">  <span class="hljs-keyword">else</span>:</span><br><span class="line">      print(<span class="hljs-literal">None</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>标识符是用来命名用的，一般是给变量命名、函数命名或者类命名……<br>标识符规则：所有标识符都必须是由字母、数字、下划线组成；不能以数字开头<br>注意：python2.x以后，标识符中可以出现中文、日语、韩语等符号，但是实际开发不建议使用</p>
-<h3 id="关键字（保留字）"><a href="#关键字（保留字）" class="headerlink" title="关键字（保留字）"></a>关键字（保留字）</h3><p>关键字就是python中有特殊功能和特殊意义的标识符</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> keyword</span><br><span class="line">print(keyword.kwlist)</span><br><span class="line"><span class="hljs-string">"""</span></span><br><span class="line"><span class="hljs-string">['False', 'None', 'True', 'and', 'as', 'assert',</span></span><br><span class="line"><span class="hljs-string">'break', 'class', 'continue', 'def', 'del', 'elif',</span></span><br><span class="line"><span class="hljs-string">'else', 'except', 'finally', 'for', 'from',</span></span><br><span class="line"><span class="hljs-string">'global', 'if', 'import', 'in', 'is', 'lambda',</span></span><br><span class="line"><span class="hljs-string">'nonlocal', 'not', 'or', 'pass', 'raise',</span></span><br><span class="line"><span class="hljs-string">'return', 'try', 'while', 'with', 'yield']</span></span><br><span class="line"><span class="hljs-string">"""</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="常见数据类型和数据"><a href="#常见数据类型和数据" class="headerlink" title="常见数据类型和数据"></a>常见数据类型和数据</h3><p>数字数据：整型(int)、浮点型(float)<br>字符串(str)：用双引号或者单引号将文本数据引起来<br>布尔(bool)：只有False、True两个值，True代表真/肯定，False代表假/否定<br>列表(list)、元组(tuple)、集合(set)、字典(dict)、函数(function)等<br>类型转换：类型名（数据）-&gt;将括号中的数据转换成指定的类型并返回</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(int(<span class="hljs-number">2.33</span>))</span><br><span class="line">print(float(<span class="hljs-number">10</span>))</span><br></pre></td></tr></table></figure>
-
-<h3 id="print和input"><a href="#print和input" class="headerlink" title="print和input"></a>print和input</h3><p>print函数:输出函数，在控制台打印print后面括号中的内容的结果<br>input函数:获取从控制台输入的的内容(输入回车的时候就完成)<br>input(提示信息)；不管在键盘上输入的是什么，input返回的结果的类型都是字符串类型</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">value = input(<span class="hljs-string">'hello world:'</span>)</span><br><span class="line">print(value, type(value))</span><br></pre></td></tr></table></figure>
-
-<h3 id="计算机只能存储和处理二进制数据"><a href="#计算机只能存储和处理二进制数据" class="headerlink" title="计算机只能存储和处理二进制数据"></a>计算机只能存储和处理二进制数据</h3><p>int类型–包含所有的整数，整数可可以表示为十进制、二进制、八进制和十六进制<br>十进制<br>a.基数:0,1,2,3,4,5,6,7,8,9<br>b.进位:逢十进一<br>c.位权:123 = 100 + 20 + 3 = 1<em>10^2 + 2</em>10^1 + 3*10^0<br>d.表示方式:默认写入为十进制</p>
-<p>二进制<br>a.基数:0, 1<br>b.进位:逢二进一<br>c.位权:111(2) = 1<em>2^2 + 1</em>2^1 + 1*2^0 = 7(10)<br>d.表示方式:在二进制数前加上前缀0b或0B<br>e.转换:直接打印</p>
-<p>八进制<br>a.基数:0, 1, 2, 3, 4, 5, 6, 7<br>b.进位:逢八进一<br>c.位权:111(8) = 1<em>8^2 + 1</em>8^1 + 1*8^0 = 73(10)<br>d.表示方式:在八进制数前加上前缀0o或者0O<br>e.转换:oct()</p>
-<p>十六进制<br>a.基数:0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A/a, B/b, C/c, D/d, E/e, F/f<br>b.进位:逢十六进一<br>c.位权:111(16) = 1<em>16^2 + 1</em>16^1 + 1*16^0 = 273(273)<br>d.表示方式:在十六进制数前加上前缀0x或0X<br>e.转换:hex()</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">num_2 = <span class="hljs-number">0b1101</span></span><br><span class="line">print(<span class="hljs-string">'转二进制'</span>, bin(<span class="hljs-number">100</span>), bin(<span class="hljs-number">0o100</span>), bin(<span class="hljs-number">0x100e</span>))</span><br><span class="line">print(num_2)</span><br><span class="line">num_8 = <span class="hljs-number">0o67</span></span><br><span class="line">print(<span class="hljs-string">'转八进制'</span>, oct(<span class="hljs-number">0b100</span>), oct(<span class="hljs-number">100</span>), oct(<span class="hljs-number">0x100e</span>))</span><br><span class="line">print(num_8)</span><br><span class="line">num_16 = <span class="hljs-number">0xe34a</span></span><br><span class="line">print(<span class="hljs-string">'转十六进制'</span>, hex(<span class="hljs-number">100</span>), hex(<span class="hljs-number">0o100</span>), hex(<span class="hljs-number">0b100</span>))</span><br><span class="line">print(num_16)</span><br></pre></td></tr></table></figure>
-
-<h3 id="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"><a href="#计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码" class="headerlink" title="计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码"></a>计算机存数据的时候，只能存数字，而且存的是数字的二进制的补码</h3><p>位(bit)<br>1字节(byte) = 8bit<br>1kb = 1024byte<br>1M = 1024kb<br>1G = 1024M<br>1T = 1024G</p>
-<h6 id="注意：正数的原码、反码、补码一样"><a href="#注意：正数的原码、反码、补码一样" class="headerlink" title="注意：正数的原码、反码、补码一样"></a>注意：正数的原码、反码、补码一样</h6><p>1、原码 = 符号位(0表示正，1表示负) + 真值(数字转换成二进制的值)<br>10 -&gt; 1010(真值) -&gt;1010<br>10的原码:00000000 00000000 00000000 00001010<br>-10的原码:10000000 00000000 00000000 00001010<br>2、负数的反码:符号为不变，其他位取反(0变1，1变0)<br>10的反码:00000000 00000000 00000000 00001010<br>-10的反码:11111111 11111111 11111111 11110101<br>3、负数的补码:反码加1<br>10的补码:00000000 00000000 00000000 00001010<br>-10的补码:11111111 11111111 11111111 11110110</p>
 
         </div>
         
@@ -500,6 +500,25 @@
         
         <article class="media">
             
+            <a href="/进制与运算符/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/article-images/python.jpg" alt="进制">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-07T08:47:46.774Z">2020-01-07</time></div>
+                    <a href="/进制与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">进制</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/变量与运算符/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/article-images/python.jpg" alt="变量与运算符">
@@ -510,25 +529,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-07T08:33:59.299Z">2020-01-07</time></div>
                     <a href="/变量与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">变量与运算符</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/进制与运算符/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/article-images/python.jpg" alt="进制与运算符">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T14:02:05.000Z">2019-12-31</time></div>
-                    <a href="/进制与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">进制与运算符</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
                     </p>
@@ -554,18 +554,7 @@
                     <span class="level-item">一月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/12/">
-                <span class="level-start">
-                    <span class="level-item">十二月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -615,6 +604,25 @@
         
         <article class="media">
             
+            <a href="/进制与运算符/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/article-images/python.jpg" alt="进制">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-07T08:47:46.774Z">2020-01-07</time></div>
+                    <a href="/进制与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">进制</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/变量与运算符/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/article-images/python.jpg" alt="变量与运算符">
@@ -625,25 +633,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-07T08:33:59.299Z">2020-01-07</time></div>
                     <a href="/变量与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">变量与运算符</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/进制与运算符/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/article-images/python.jpg" alt="进制与运算符">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T14:02:05.000Z">2019-12-31</time></div>
-                    <a href="/进制与运算符/" class="title has-link-black-ter is-size-6 has-text-weight-normal">进制与运算符</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
                     </p>
@@ -669,18 +658,7 @@
                     <span class="level-item">一月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/12/">
-                <span class="level-start">
-                    <span class="level-item">十二月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
