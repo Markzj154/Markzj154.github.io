@@ -19,7 +19,7 @@
 <meta property="og:description" content="变量概念：变量是在程序中开辟空间存储数据用的语法：变量名 = 值说明：变量名由程序员自己命名变量名命名要求：为标识符，但不能是关键字；而且要遵守PEP8命名规范(即变量名中所有的字母都小写，如果由多个单词组成，单词之间用下划线隔开；在命名时，要做到见名知义，看见变量名大概知道变量名中存储的是什么数据)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-07T11:35:33.366Z">
+<meta property="og:updated_time" content="2020-01-07T11:58:58.020Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="变量与运算符">
 <meta name="twitter:description" content="变量概念：变量是在程序中开辟空间存储数据用的语法：变量名 = 值说明：变量名由程序员自己命名变量名命名要求：为标识符，但不能是关键字；而且要遵守PEP8命名规范(即变量名中所有的字母都小写，如果由多个单词组成，单词之间用下划线隔开；在命名时，要做到见名知义，看见变量名大概知道变量名中存储的是什么数据)">
@@ -189,7 +189,7 @@
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">grade = <span class="hljs-number">4</span></span><br><span class="line">score = <span class="hljs-number">88</span></span><br><span class="line"><span class="hljs-comment"># 1）条件：grade&gt;=4并且score&gt;=90</span></span><br><span class="line">print(grade &gt;= <span class="hljs-number">3.5</span> <span class="hljs-keyword">or</span> score &gt;= <span class="hljs-number">95</span>)</span><br></pre></td></tr></table></figure>
 
 <h6 id="not"><a href="#not" class="headerlink" title="not:"></a>not:</h6><p>a.运算规则：True变False， False变True<br>b.什么时候使用：对某个条件进行否定</p>
-<h6 id="短路操作"><a href="#短路操作" class="headerlink" title="短路操作"></a>短路操作</h6><p>逻辑与运算的短路操作：当and前面的表达式的值是False的时候，程序不会再去执行and后面的表达式<br>逻辑或运算的短路操作：当or前面的表达式的值是True的时候，程序不会再去执行or后面的表达式</p>
+<h5 id="短路操作"><a href="#短路操作" class="headerlink" title="短路操作"></a>短路操作</h5><p>逻辑与运算的短路操作：当and前面的表达式的值是False的时候，程序不会再去执行and后面的表达式<br>逻辑或运算的短路操作：当or前面的表达式的值是True的时候，程序不会再去执行or后面的表达式</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">练习<span class="hljs-number">1</span></span><br><span class="line"><span class="hljs-comment"># 1）判断一个数能否被2或者5整除</span></span><br><span class="line">num1 = int(input(<span class="hljs-string">"please input a number:"</span>))</span><br><span class="line">print(num1 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> num1 % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>)</span><br><span class="line"><span class="hljs-comment"># 2）判断一个数是否能同时被2和5整除</span></span><br><span class="line">print(num1 % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> num1 % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>)</span><br><span class="line"><span class="hljs-comment"># 3）判断一个数是否是3或者7的倍数，并且这个数的末尾不是3</span></span><br><span class="line">print((num1 % <span class="hljs-number">3</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> num1 % <span class="hljs-number">7</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> num1 % <span class="hljs-number">10</span> != <span class="hljs-number">3</span>)</span><br></pre></td></tr></table></figure>
 
 <h5 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符: =, +=, -=, =, /=, %=, //=, *="></a>赋值运算符: =, +=, -=, <em>=, /=, %=, //=, *</em>=</h5><p>不管是什么样的赋值运算符，最终的操作都是给变量赋值；所以赋值运算符的左边必须是变量<br>复合和赋值运算符：先将赋值符号左边变量中的值取出来，然后进行指定的运算，最后将运算结果再从新赋值给左边的变量<br>注意：复合的赋值运算符的左边必须是已经赋值过的变量</p>
@@ -287,7 +287,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        4
                     </p>
                 </div>
             </div>
@@ -396,45 +396,45 @@
         <a class="is-flex" href="#not">
         <span class="has-mr-6">2.1.3</span>
         <span>not:</span>
-        </a></li><li>
-        <a class="is-flex" href="#短路操作">
-        <span class="has-mr-6">2.1.4</span>
-        <span>短路操作</span>
         </a></li></ul></li><li>
-        <a class="is-flex" href="#赋值运算符">
+        <a class="is-flex" href="#短路操作">
         <span class="has-mr-6">2.2</span>
+        <span>短路操作</span>
+        </a></li><li>
+        <a class="is-flex" href="#赋值运算符">
+        <span class="has-mr-6">2.3</span>
         <span>赋值运算符: =, +=, -=, =, /=, %=, //=, *=</span>
         </a></li><li>
         <a class="is-flex" href="#位运算：-amp-按位与运算-，-按位或运算-，-按位异或-，-按位取反-，-lt-lt-左移-，-gt-gt-右移">
-        <span class="has-mr-6">2.3</span>
+        <span class="has-mr-6">2.4</span>
         <span>位运算：&amp;(按位与运算)， |(按位或运算)，^(按位异或)， ~(按位取反)， &lt;&lt;(左移)， &gt;&gt;(右移)</span>
         </a><ul class="menu-list"><li>
         <a class="is-flex" href="#1、按位与">
-        <span class="has-mr-6">2.3.1</span>
+        <span class="has-mr-6">2.4.1</span>
         <span>1、按位与</span>
         </a></li><li>
         <a class="is-flex" href="#2、按位或">
-        <span class="has-mr-6">2.3.2</span>
+        <span class="has-mr-6">2.4.2</span>
         <span>2、按位或</span>
         </a></li><li>
         <a class="is-flex" href="#3、按位取反">
-        <span class="has-mr-6">2.3.3</span>
+        <span class="has-mr-6">2.4.3</span>
         <span>3、按位取反</span>
         </a></li><li>
         <a class="is-flex" href="#4、按位异或">
-        <span class="has-mr-6">2.3.4</span>
+        <span class="has-mr-6">2.4.4</span>
         <span>4、按位异或</span>
         </a></li><li>
         <a class="is-flex" href="#5、左移">
-        <span class="has-mr-6">2.3.5</span>
+        <span class="has-mr-6">2.4.5</span>
         <span>5、左移</span>
         </a></li><li>
         <a class="is-flex" href="#6、右移">
-        <span class="has-mr-6">2.3.6</span>
+        <span class="has-mr-6">2.4.6</span>
         <span>6、右移</span>
         </a></li><li>
         <a class="is-flex" href="#应用：">
-        <span class="has-mr-6">2.3.7</span>
+        <span class="has-mr-6">2.4.7</span>
         <span>应用：</span>
         </a></li></ul></li></ul></li></ul>
         </div>
@@ -509,7 +509,7 @@
                 <span class="level-item">Python基础</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">4</span>
             </span>
         </a></li>
             </ul>
@@ -523,6 +523,19 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-02T16:00:00.000Z">2019-08-03</time></div>
+                    <a href="/列表/" class="title has-link-black-ter is-size-6 has-text-weight-normal">列表</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -576,6 +589,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">八月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/07/">
                 <span class="level-start">
                     <span class="level-item">七月 2019</span>
@@ -602,7 +626,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -636,7 +660,7 @@
                 <span class="level-item">Python基础</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">4</span>
             </span>
         </a></li>
             </ul>
@@ -650,6 +674,19 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-02T16:00:00.000Z">2019-08-03</time></div>
+                    <a href="/列表/" class="title has-link-black-ter is-size-6 has-text-weight-normal">列表</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -703,6 +740,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">八月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/07/">
                 <span class="level-start">
                     <span class="level-item">七月 2019</span>
@@ -729,7 +777,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
