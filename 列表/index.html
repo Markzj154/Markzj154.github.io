@@ -19,7 +19,7 @@
 <meta property="og:description" content="列表：概念：列表是容器型数据类型（序列），将[]作为容器的标志，多个元素用逗号隔开特点：可变的（指的是列表中元素可变-元素支持增删改）、有序的（支持下标操作）声明列表：变量名 = [元素1, 元素2, 元素3, …]列表中的元素：任何类型的数据都可以作为列表元素；同一个列表中的数据的类型可以不一样">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-07T11:56:23.898Z">
+<meta property="og:updated_time" content="2020-01-08T12:07:31.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="列表">
 <meta name="twitter:description" content="列表：概念：列表是容器型数据类型（序列），将[]作为容器的标志，多个元素用逗号隔开特点：可变的（指的是列表中元素可变-元素支持增删改）、有序的（支持下标操作）声明列表：变量名 = [元素1, 元素2, 元素3, …]列表中的元素：任何类型的数据都可以作为列表元素；同一个列表中的数据的类型可以不一样">
@@ -163,7 +163,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 863 个字)
+                    10 分钟 读完 (大约 1474 个字)
                 </span>
                 
                 
@@ -190,6 +190,17 @@
 
 <h4 id="2、删（删除列表中的元素）"><a href="#2、删（删除列表中的元素）" class="headerlink" title="2、删（删除列表中的元素）"></a>2、删（删除列表中的元素）</h4><p>1)del 列表[下标] –&gt; 删除列表中指定下标对应的元素(下标不能越界)<br>2)remove(元素) –&gt; 删除列表中第一个指定元素的值(元素必须存在)<br>3)列表.pop(下标) –&gt; 取出列表中指定下标对应的元素，返回被取出的元素<br>  列表.pop()  –&gt; 取出列表中是最后一个元素，返回被取出的元素</p>
 <h4 id="3、改（修改列表中列表的值）"><a href="#3、改（修改列表中列表的值）" class="headerlink" title="3、改（修改列表中列表的值）"></a>3、改（修改列表中列表的值）</h4><p>列表[下标] = 新值</p>
+<h4 id="列表运算"><a href="#列表运算" class="headerlink" title="列表运算"></a>列表运算</h4><h5 id="1、列表的数学运算：-，"><a href="#1、列表的数学运算：-，" class="headerlink" title="1、列表的数学运算：+， *"></a>1、列表的数学运算：+， *</h5><p>列表1 + 列表2  –&gt; 将两个列表中的元素合并产生一个新的列表；（不会修改原来的列表）<br>列表 * N 、 N * 列表 –&gt; N是正整数；列表中的元素重复N次产生一个新的列表</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>] + [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>])</span><br><span class="line">list1 = [<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>]</span><br><span class="line">print(list1 + [<span class="hljs-number">44</span>, <span class="hljs-number">55</span>], list1)</span><br><span class="line">print(list1 * <span class="hljs-number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<h5 id="2、列表的比较运算：-，-gt-lt-gt-lt"><a href="#2、列表的比较运算：-，-gt-lt-gt-lt" class="headerlink" title="2、列表的比较运算： ==，!=, &gt;, &lt;, &gt;=, &lt;="></a>2、列表的比较运算： ==，!=, &gt;, &lt;, &gt;=, &lt;=</h5><p>列表1 == 列表2 、 列表1 != 列2<br>两个列表的大小，不是比较列表的长度，而是比较相对应位置值的大小<br>补充：is的用法<br>== –&gt; 判断两个数据的值是否相等<br>is –&gt; 判断两个数据的地址是否一样</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">list2 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]</span><br><span class="line">list3 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]</span><br><span class="line">print(list2 == list3)</span><br><span class="line">print(list2 <span class="hljs-keyword">is</span> list3)</span><br></pre></td></tr></table></figure>
+
+<h5 id="3、in-和not-in"><a href="#3、in-和not-in" class="headerlink" title="3、in 和not in"></a>3、in 和not in</h5><p>元素 in 列表 –&gt; 判断列表中是否存在指定的元素<br>元素 not in 列表 –&gt; 判断列表中是否不存在指定的元素</p>
+<h5 id="4、内置函数：max-序列-min-序列-sum-序列-len-序列-，-list-序列"><a href="#4、内置函数：max-序列-min-序列-sum-序列-len-序列-，-list-序列" class="headerlink" title="4、内置函数：max(序列), min(序列) sum(序列), len(序列)， list(序列)"></a>4、内置函数：max(序列), min(序列) sum(序列), len(序列)， list(序列)</h5><p>max和min要求序列中的元素类型必须一致，并且元素支持比较运算符<br>sum要求序列中的元素必须是数字<br>list() –&gt; 只有容器型数据类型才能转换成列表，将序列中的元素作为列表的元素产生一个新列表</p>
+<h4 id="列表方法"><a href="#列表方法" class="headerlink" title="列表方法"></a>列表方法</h4><p>列表.count(元素) –&gt; 统计列表中指定元素的个数<br>列表.extend(序列) –&gt;将序列中的元素添加到列表的后面<br>列表.index(元素) –&gt; 获取元素在列表中的下标（如果元素有多个只取第一个，要取的元素不存在会报错）<br>列表.reverse() –&gt; 让列表倒序(不会产生新的列表)<br>列表.sort() –&gt; 将列表中的元素从小到大排序<br>列表.sort(reverse=True) –&gt; 将列表中的元素从大到排序<br>注意：列表中的元素类型必须一样，并且元素支持比较运算符，不会产生新的列表<br>sorted() –&gt; 对序列中的元素从大到小排序，产生一个新的序列<br>sorted(序列, reverse=True) –&gt; 对序列中的元素从大到小排序，产生一个新的序列<br>列表.clear() –&gt; 清空列表<br>列表.copy() –&gt; 和[:]的效果一样，拷贝列表中的元素产生一个新的列表（这儿的拷贝是浅拷贝）</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]</span><br><span class="line">list1.extend(<span class="hljs-string">"hello"</span>)</span><br><span class="line">print(list1)</span><br><span class="line">list2 = [<span class="hljs-number">12</span>, <span class="hljs-number">4</span>, <span class="hljs-number">234</span>, <span class="hljs-number">33</span>, <span class="hljs-number">56</span>, <span class="hljs-number">67</span> ,<span class="hljs-number">34</span>, <span class="hljs-number">56</span>]</span><br><span class="line">list2.sort(key=<span class="hljs-keyword">lambda</span> num :num % <span class="hljs-number">10</span>)</span><br><span class="line">print(list2)</span><br><span class="line"></span><br><span class="line">list3 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">84</span>, <span class="hljs-number">13</span>, <span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">45</span>]</span><br><span class="line">print(sorted(list3))</span><br></pre></td></tr></table></figure>
+
 
         </div>
         
@@ -391,6 +402,30 @@
         <a class="is-flex" href="#3、改（修改列表中列表的值）">
         <span class="has-mr-6">1.5</span>
         <span>3、改（修改列表中列表的值）</span>
+        </a></li><li>
+        <a class="is-flex" href="#列表运算">
+        <span class="has-mr-6">1.6</span>
+        <span>列表运算</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1、列表的数学运算：-，">
+        <span class="has-mr-6">1.6.1</span>
+        <span>1、列表的数学运算：+， *</span>
+        </a></li><li>
+        <a class="is-flex" href="#2、列表的比较运算：-，-gt-lt-gt-lt">
+        <span class="has-mr-6">1.6.2</span>
+        <span>2、列表的比较运算： ==，!=, &gt;, &lt;, &gt;=, &lt;=</span>
+        </a></li><li>
+        <a class="is-flex" href="#3、in-和not-in">
+        <span class="has-mr-6">1.6.3</span>
+        <span>3、in 和not in</span>
+        </a></li><li>
+        <a class="is-flex" href="#4、内置函数：max-序列-min-序列-sum-序列-len-序列-，-list-序列">
+        <span class="has-mr-6">1.6.4</span>
+        <span>4、内置函数：max(序列), min(序列) sum(序列), len(序列)， list(序列)</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#列表方法">
+        <span class="has-mr-6">1.7</span>
+        <span>列表方法</span>
         </a></li></ul></li></ul>
         </div>
     </div>
