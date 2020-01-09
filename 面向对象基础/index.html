@@ -19,7 +19,7 @@
 <meta property="og:description" content="编程思想：面向过程编程、函数式编程、面向对象编程面向过程编程 – 算法和逻辑函数式编程 – 函数面向对象编程 – 类和对象 什么是类，什么是对象类就是拥有相同属性、相同功能的对象的集合（抽象的）对象就是类的实例（具体的）">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-09T14:11:06.953Z">
+<meta property="og:updated_time" content="2020-01-09T14:16:15.261Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象基础">
 <meta name="twitter:description" content="编程思想：面向过程编程、函数式编程、面向对象编程面向过程编程 – 算法和逻辑函数式编程 – 函数面向对象编程 – 类和对象 什么是类，什么是对象类就是拥有相同属性、相同功能的对象的集合（抽象的）对象就是类的实例（具体的）">
@@ -163,7 +163,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    10 分钟 读完 (大约 1439 个字)
+                    7 分钟 读完 (大约 1051 个字)
                 </span>
                 
                 
@@ -192,9 +192,6 @@
 <h4 id="类中的属性"><a href="#类中的属性" class="headerlink" title="类中的属性"></a>类中的属性</h4><p>属性就是声明在类中的变量<br>类中的属性分为：字段和对象属性<br>1.字段<br>a.怎么声明:声明在类的里面函数的外面的变量就是字段<br>b.怎么使用：通过类去使用（以’类.字段’的形式使用）<br>c.什么时候使用：属性的值不会因为对象不同而不同，这样的属性就声明成类的字段<br>2.对象属性（重要）<br>a.怎么声明：以’self.属性名=值’的形式声明在<strong>init</strong>方法中<br>b.怎么使用：通过实例对象去使用<br>c.什么时候使用：属性的值可能会因为对象不同而不一样，这样的属性就声明成对象属性</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 练习：</span></span><br><span class="line"><span class="hljs-comment"># 1）声明一个Dog类，拥有属性：名字、年龄、性别、类型；</span></span><br><span class="line"><span class="hljs-comment"># 要求创建对的时候，名字、品种必须赋值，年龄和性别可以赋值也可以不赋值</span></span><br><span class="line"><span class="hljs-comment"># 2）拥有两个对象方法，一个用来大打印狗的信息（显示信息的方法）和一个叫的方法：以***:汪汪汪的格式打印叫唤信息</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,  name, var, age=<span class="hljs-number">0</span>, gender=<span class="hljs-string">'male'</span>)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.var = var</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        print(self.name, self.age, self.gender, self.var)</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">call_out</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        print(<span class="hljs-string">'&#123;&#125;:汪汪汪'</span>.format(self.name))</span><br><span class="line"></span><br><span class="line">dog1 = Dog(<span class="hljs-string">'旺财'</span>, <span class="hljs-string">'哈士奇'</span>)</span><br><span class="line">dog1.info()</span><br><span class="line">dog1.call_out()</span><br><span class="line">dog2 = Dog(<span class="hljs-string">'小黄'</span>, <span class="hljs-string">'中华田园犬'</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'male'</span>)</span><br><span class="line">dog2.info()</span><br><span class="line">dog2.call_out()</span><br></pre></td></tr></table></figure>
 
-<h4 id="类中的属性-1"><a href="#类中的属性-1" class="headerlink" title="类中的属性"></a>类中的属性</h4><p>属性就是声明在类中的变量<br>类中的属性分为：字段和对象属性<br>1.字段<br>a.怎么声明:声明在类的里面函数的外面的变量就是字段<br>b.怎么使用：通过类去使用（以’类.字段’的形式使用）<br>c.什么时候使用：属性的值不会因为对象不同而不同，这样的属性就声明成类的字段<br>2.对象属性（重要）<br>a.怎么声明：以’self.属性名=值’的形式声明在<strong>init</strong>方法中<br>b.怎么使用：通过实例对象去使用<br>c.什么时候使用：属性的值可能会因为对象不同而不一样，这样的属性就声明成对象属性</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 练习：</span></span><br><span class="line"><span class="hljs-comment"># 1）声明一个Dog类，拥有属性：名字、年龄、性别、类型；</span></span><br><span class="line"><span class="hljs-comment"># 要求创建对的时候，名字、品种必须赋值，年龄和性别可以赋值也可以不赋值</span></span><br><span class="line"><span class="hljs-comment"># 2）拥有两个对象方法，一个用来大打印狗的信息（显示信息的方法）和一个叫的方法：以***:汪汪汪的格式打印叫唤信息</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,  name, var, age=<span class="hljs-number">0</span>, gender=<span class="hljs-string">'male'</span>)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.gender = gender</span><br><span class="line">        self.var = var</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        print(self.name, self.age, self.gender, self.var)</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">call_out</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        print(<span class="hljs-string">'&#123;&#125;:汪汪汪'</span>.format(self.name))</span><br><span class="line"></span><br><span class="line">dog1 = Dog(<span class="hljs-string">'旺财'</span>, <span class="hljs-string">'哈士奇'</span>)</span><br><span class="line">dog1.info()</span><br><span class="line">dog1.call_out()</span><br><span class="line">dog2 = Dog(<span class="hljs-string">'小黄'</span>, <span class="hljs-string">'中华田园犬'</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'male'</span>)</span><br><span class="line">dog2.info()</span><br><span class="line">dog2.call_out()</span><br></pre></td></tr></table></figure>
-
 
         </div>
         
@@ -218,6 +215,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/面向对象/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">面向对象</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -275,7 +279,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        13
+                        14
                     </p>
                 </div>
             </div>
@@ -384,10 +388,6 @@
         <a class="is-flex" href="#类中的属性">
         <span class="has-mr-6">7</span>
         <span>类中的属性</span>
-        </a></li><li>
-        <a class="is-flex" href="#类中的属性-1">
-        <span class="has-mr-6">8</span>
-        <span>类中的属性</span>
         </a></li></ul>
         </div>
     </div>
@@ -461,7 +461,7 @@
                 <span class="level-item">Python基础</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">13</span>
+                <span class="level-item tag">14</span>
             </span>
         </a></li>
             </ul>
@@ -475,6 +475,19 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T16:00:00.000Z">2019-08-25</time></div>
+                    <a href="/面向对象/" class="title has-link-black-ter is-size-6 has-text-weight-normal">面向对象</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -528,19 +541,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-14T16:00:00.000Z">2019-08-15</time></div>
-                    <a href="/函数/" class="title has-link-black-ter is-size-6 has-text-weight-normal">函数</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -559,7 +559,7 @@
                     <span class="level-item">八月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -591,7 +591,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">13</span>
+                        <span class="tag is-grey">14</span>
                     </a>
                 </div>
                 
@@ -625,7 +625,7 @@
                 <span class="level-item">Python基础</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">13</span>
+                <span class="level-item tag">14</span>
             </span>
         </a></li>
             </ul>
@@ -639,6 +639,19 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T16:00:00.000Z">2019-08-25</time></div>
+                    <a href="/面向对象/" class="title has-link-black-ter is-size-6 has-text-weight-normal">面向对象</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -692,19 +705,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-14T16:00:00.000Z">2019-08-15</time></div>
-                    <a href="/函数/" class="title has-link-black-ter is-size-6 has-text-weight-normal">函数</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -723,7 +723,7 @@
                     <span class="level-item">八月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -755,7 +755,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">13</span>
+                        <span class="tag is-grey">14</span>
                     </a>
                 </div>
                 
