@@ -7,22 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>分支与循环 - 锦仙鑫小筑</title>
+<title>内存管理和拷贝 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="python中的分支结构只有if语句if语句：a.语法：满足某个条件才执行某段代码if 条件语句：&amp;emsp;&amp;emsp;代码段">
+    <meta name="description" content="python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="分支与循环">
-<meta property="og:url" content="http://markzjlove.cn/分支和循环/index.html">
+<meta property="og:title" content="内存管理和拷贝">
+<meta property="og:url" content="http://markzjlove.cn/内存管理和拷贝/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="python中的分支结构只有if语句if语句：a.语法：满足某个条件才执行某段代码if 条件语句：&amp;emsp;&amp;emsp;代码段">
+<meta property="og:description" content="python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-07T12:03:02.265Z">
+<meta property="og:updated_time" content="2020-01-09T14:40:55.771Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分支与循环">
-<meta name="twitter:description" content="python中的分支结构只有if语句if语句：a.语法：满足某个条件才执行某段代码if 条件语句：&amp;emsp;&amp;emsp;代码段">
+<meta name="twitter:title" content="内存管理和拷贝">
+<meta name="twitter:description" content="python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -93,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="分支与循环" height="28">
+                <img src="/images/logo.svg" alt="内存管理和拷贝" height="28">
             
             </a>
         </div>
@@ -130,6 +130,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -149,7 +153,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-29T16:00:00.000Z">2019-07-30</time>
+                <time class="level-item has-text-grey" datetime="2019-08-26T16:00:00.000Z">2019-08-27</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Python基础/">Python基础</a>
@@ -159,7 +163,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    12 分钟 读完 (大约 1782 个字)
+                    7 分钟 读完 (大约 998 个字)
                 </span>
                 
                 
@@ -168,43 +172,25 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                分支与循环
+                内存管理和拷贝
             
         </h1>
         <div class="content">
-            <h3 id="python中的分支结构只有if语句"><a href="#python中的分支结构只有if语句" class="headerlink" title="python中的分支结构只有if语句"></a>python中的分支结构只有if语句</h3><h5 id="if语句："><a href="#if语句：" class="headerlink" title="if语句："></a>if语句：</h5><p>a.语法：满足某个条件才执行某段代码<br>if 条件语句：<br>&emsp;&emsp;代码段</p>
+            <p>python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段<br>和方法能被继承</p>
 <a id="more"></a>
-<p>b.说明：if – 关键字，固定写法<br>&emsp;&emsp;条件语句 – 可以是一个具体的数据，也可以是一个已经赋值过的变量，或者是运算表达式（不能是赋值语句）<br>&emsp;&emsp;: – 固定写法<br>&emsp;&emsp;代码段 – 一条或者多条和if保持一个缩进的语句（任何语句）<br>c.执行过程：先判断条件语句的结果是否为True（如果不是布尔就先转换为布尔），如果为True就执行代码段，然后再执行后面其他的<br>            语句，如果是False，不执行代码段，直接执行其他语句</p>
-<p>补充：布尔值转换 – python中所有的数据都能转换成布尔，所有为0为空的值都会转换成False，其他都是True</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#输入年龄，如果输入的年龄值大于等于18岁，打印"可以进网吧"</span></span><br><span class="line">age = int(input(<span class="hljs-string">"请输入一个整数："</span>))</span><br><span class="line"><span class="hljs-keyword">if</span> age &gt;= <span class="hljs-number">18</span>:</span><br><span class="line">    print(<span class="hljs-string">"可以进网吧"</span>)</span><br><span class="line"><span class="hljs-keyword">else</span>:</span><br><span class="line">    print(<span class="hljs-string">"未成年禁止入内"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span></span><br><span class="line">    num = <span class="hljs-number">100</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        self.age = <span class="hljs-number">0</span></span><br><span class="line">        self.gender = <span class="hljs-string">'male'</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">    @classmethod</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func1</span><span class="hljs-params">(cls)</span>:</span></span><br><span class="line">        print(<span class="hljs-string">'动物类的类方法'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fly</span>:</span></span><br><span class="line">        name = <span class="hljs-string">'飞行'</span></span><br><span class="line">        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">            self.height = <span class="hljs-number">100</span></span><br><span class="line">            self.time = <span class="hljs-number">3</span></span><br><span class="line">            self.speed = <span class="hljs-number">80</span></span><br><span class="line"></span><br><span class="line">        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func2</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">            print(<span class="hljs-string">'飞行的对象方法'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bird</span><span class="hljs-params">(Animal, Fly)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">b = Bird()</span><br><span class="line">print(Bird.num, Bird.name)</span><br><span class="line"><span class="hljs-comment"># print(Bird.age, Bird.time)</span></span><br><span class="line">Bird.func1()</span><br><span class="line">print(b.age, b.gender)</span><br><span class="line"><span class="hljs-comment"># print(b.height)</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="if-else-语句：满足条件执行某段代码，不满足这个条件的时候执行另外一段代码"><a href="#if-else-语句：满足条件执行某段代码，不满足这个条件的时候执行另外一段代码" class="headerlink" title="if - else 语句：满足条件执行某段代码，不满足这个条件的时候执行另外一段代码"></a>if - else 语句：满足条件执行某段代码，不满足这个条件的时候执行另外一段代码</h5><dl><dt>a.语法：<br>if 条件语句1:<br>&emsp;&emsp;代码段1<br>else:<br>&emsp;&emsp;代码段2<br>b.说明：<br>if/else – 关键字，固定写法<br>条件语句 – 可以是一个具体的数据，也可以是一个已经赋值过的变量，或者是运算表达式（不能是赋值语句）</dt><dd>– 固定结构<br>代码段1 – 和if保持一个缩进的一条或者多条语句（满足if后面的条件才会执行）<br>代码段2 – 和else保持一个缩进的一条或者多条语句（if后面的条件不成立才会执行）<br>c.执行过程：<br>先判断条件语句是否为True，如果为True就执行代码段1，否则执行代码段2</dd></dl><h5 id="if-elif-else语句：-条件有多个（有关联）时，执行不同的代码段"><a href="#if-elif-else语句：-条件有多个（有关联）时，执行不同的代码段" class="headerlink" title="if - elif - else语句： 条件有多个（有关联）时，执行不同的代码段"></a>if - elif - else语句： 条件有多个（有关联）时，执行不同的代码段</h5><p>a.语法：<br>if 条件语句1:<br>&emsp;&emsp;代码段1<br>elif 条件语句2:<br>&emsp;&emsp;代码段2<br>elif 条件语句3:<br>&emsp;&emsp;代码段3<br>    .<br>    .<br>    .<br>else:<br>&emsp;&emsp;代码段n<br>b.执行过程：先判断条件语句1是否为True,如果为True就执行代码段1，然后整个if结构结束直接执行其他语句；<br>            如果条件语句1为False，就判断条件语句2是否为True，为True就执行代码段2再执行其他语句；<br>            如果条件语句2为False，就判断条件语句3是否为True，为Ture就执行代码段3再执行其他语句；<br>            以此类推<br>            如果所有的条件语句都是False，就执行代码段n，再执行其他语句</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 根据输入的年龄值，判断年龄处于的阶段</span></span><br><span class="line">age = int(input(<span class="hljs-string">"please input a number:"</span>))</span><br><span class="line"><span class="hljs-keyword">if</span> <span class="hljs-number">0</span> &lt; age &lt; <span class="hljs-number">3</span>:</span><br><span class="line">    print(<span class="hljs-string">"幼儿"</span>)</span><br><span class="line"><span class="hljs-keyword">elif</span> age&lt;= <span class="hljs-number">12</span>:</span><br><span class="line">    print(<span class="hljs-string">"儿童"</span>)</span><br><span class="line"><span class="hljs-keyword">elif</span> age &lt;= <span class="hljs-number">18</span>:</span><br><span class="line">    print(<span class="hljs-string">"青少年"</span>)</span><br><span class="line"><span class="hljs-keyword">elif</span> age &lt;= <span class="hljs-number">28</span>:</span><br><span class="line">    print(<span class="hljs-string">"青年"</span>)</span><br><span class="line"><span class="hljs-keyword">elif</span> age &lt;= <span class="hljs-number">50</span>:</span><br><span class="line">    print(<span class="hljs-string">"壮年"</span>)</span><br><span class="line"><span class="hljs-keyword">elif</span> age &lt;= <span class="hljs-number">75</span>:</span><br><span class="line">    print(<span class="hljs-string">"中老年"</span>)</span><br><span class="line"><span class="hljs-keyword">elif</span> age &lt;= <span class="hljs-number">100</span>:</span><br><span class="line">    print(<span class="hljs-string">"老年"</span>)</span><br><span class="line"><span class="hljs-keyword">else</span>:</span><br><span class="line">    print(<span class="hljs-string">"成仙"</span>)</span><br></pre></td></tr></table></figure>
+<p>python中所有的类型都是类，所以所有的数据都是对象<br>python中使用任意的运算符都是在调用相应类中的对应的方法，每一个运算符对应的什么方法是固定的<br>某种数据是否支持某个运算符操作就看这个数据类型中是否实现了对应的方法</p>
+<h4 id="运算符重载指的是在不同的类中实现同样的函数的运算符对应的函数"><a href="#运算符重载指的是在不同的类中实现同样的函数的运算符对应的函数" class="headerlink" title="运算符重载指的是在不同的类中实现同样的函数的运算符对应的函数"></a>运算符重载指的是在不同的类中实现同样的函数的运算符对应的函数</h4><h5 id="类的对象默认情况下只支持"><a href="#类的对象默认情况下只支持" class="headerlink" title="类的对象默认情况下只支持==, !="></a>类的对象默认情况下只支持==, !=</h5><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, age, score)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.score = score</span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment"># a+b --&gt; a.__add__(b)</span></span><br><span class="line">    <span class="hljs-comment"># self --&gt; 当前类的对象，也是+前面的那个数据</span></span><br><span class="line">    <span class="hljs-comment"># other --&gt; +后面的那个数据，类型根据运算规则的设计可以是任何类型的数据</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__repr__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-string">f'&lt;<span class="hljs-subst">&#123;str(self.__dict__)[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>]&#125;</span>&gt;'</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__add__</span><span class="hljs-params">(self, other)</span>:</span></span><br><span class="line">        <span class="hljs-comment"># return self.age + other.age</span></span><br><span class="line">        <span class="hljs-keyword">return</span> Student(self.name + other.name, self.age + other.age, self.score + other.score)</span><br><span class="line">    <span class="hljs-comment"># 注意：&lt;,&gt;符号只需要重载其中一个就可以</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__lt__</span><span class="hljs-params">(self, other)</span>:</span></span><br><span class="line">        <span class="hljs-keyword">return</span> self.score &lt; other.score</span><br><span class="line">stu1 = Student(<span class="hljs-string">'小明'</span>, <span class="hljs-number">22</span>, <span class="hljs-number">77</span>)</span><br><span class="line">stu2 = Student(<span class="hljs-string">'小红'</span>, <span class="hljs-number">19</span>, <span class="hljs-number">88</span>)</span><br><span class="line">print(stu1 + stu2)</span><br><span class="line">print(stu1 &lt; stu2)</span><br></pre></td></tr></table></figure>
 
-<h5 id="if语句嵌套"><a href="#if语句嵌套" class="headerlink" title="if语句嵌套"></a>if语句嵌套</h5><p>再if结构中的if、else、elif后面的代码段中，还可以写其他的if语句<br> <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">num = int(input(<span class="hljs-string">"please input a number:"</span>))</span><br><span class="line"><span class="hljs-keyword">if</span> num &amp; <span class="hljs-number">1</span> == <span class="hljs-number">1</span>:</span><br><span class="line">    print(<span class="hljs-string">"奇数"</span>)</span><br><span class="line"><span class="hljs-keyword">else</span>:</span><br><span class="line">    print(<span class="hljs-string">"偶数"</span>)</span><br><span class="line">    <span class="hljs-keyword">if</span> num % <span class="hljs-number">4</span> == <span class="hljs-number">0</span>:</span><br><span class="line">        print(<span class="hljs-string">"是4的倍数"</span>)</span><br></pre></td></tr></table></figure></p>
-<h5 id="for循环："><a href="#for循环：" class="headerlink" title="for循环："></a>for循环：</h5><p>a.语法：<br>for 变量名 in 序列:<br>&emsp;&emsp;循环体<br>b.说明：<br>for – 关键字<br>变量名 – 要求和声明变量的时候的变量名一样<br>in – 关键字<br>序列 – 容器型数据型类型的数据，例如：字符串、列表、元组、字典、集合、迭代器、生成器、range<br>循环体 – 和for保持缩进的一条或者多条语句；循环体中的代码就是需要重复执行的代码<br>c.执行过程：<br>让变量去序列中取值，一个一个的取，取完为止，每取一个值执行一次循环体<br>（python中控制for循环的循环次数，是通过控制in后面序列元素的个数来控制的）</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 练习：打印十行"==="</span></span><br><span class="line"><span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> <span class="hljs-string">" "</span>*<span class="hljs-number">10</span>:</span><br><span class="line">    print(<span class="hljs-string">"===="</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="浅拷贝和深拷贝"><a href="#浅拷贝和深拷贝" class="headerlink" title="浅拷贝和深拷贝"></a>浅拷贝和深拷贝</h4><p>1、直接赋值<br>将变量中的地址直接赋给新的变量，赋值后两个变量的地址相同<br>2、拷贝<br>不管是浅拷贝还是深拷贝都会对原数据进行赋值产生新的地址<br>3、浅拷贝<br>字符串、列表和元组的切片；对象.copy()；copy模块中的copy方法都是浅拷贝<br>浅拷贝指当前对象，不会对子对象进行拷贝<br>4、深拷贝<br>copy模块中的deepcopy方法是深拷贝</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 练习</span></span><br><span class="line"><span class="hljs-keyword">from</span> copy <span class="hljs-keyword">import</span> copy, deepcopy</span><br><span class="line">a = [<span class="hljs-string">'color'</span>, <span class="hljs-string">'height'</span>, <span class="hljs-string">'background'</span>]</span><br><span class="line">b = [a, <span class="hljs-string">'aaa'</span>, <span class="hljs-string">'bbb'</span>]</span><br><span class="line">c1 = b</span><br><span class="line">c2 = copy(b)</span><br><span class="line">c3 = deepcopy(b)</span><br><span class="line">a[<span class="hljs-number">-1</span>] = [<span class="hljs-string">'BG'</span>]</span><br><span class="line">b.append(<span class="hljs-string">'ccc'</span>)</span><br><span class="line"><span class="hljs-comment"># 问题：print(c1), print(c3), print(c3)</span></span><br><span class="line">print(c1)</span><br><span class="line">print(c2)</span><br><span class="line">print(c3)</span><br></pre></td></tr></table></figure>
 
-<p>range函数 – 产生指定范围内的数字序列<br>range(n) – 产生0到n-1的整数数列<br>range(m, n) – 产生m到n-1的整数数列<br>range(m, n, step) – 从m开始每次加step产生下一个数，直到n前一个为止</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">print(list(range(<span class="hljs-number">10</span>)))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):</span><br><span class="line">    print(i)</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>):</span><br><span class="line">    print(i)</span><br><span class="line"><span class="hljs-comment"># 练习：使用循环计算1+2+3+...+100</span></span><br><span class="line">num = <span class="hljs-number">0</span></span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">101</span>):</span><br><span class="line">    num += i</span><br><span class="line">print(num)</span><br><span class="line"><span class="hljs-comment"># 练习：统计100以内能够被2整除但是不能被3整除的个数</span></span><br><span class="line">n = <span class="hljs-number">0</span></span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):</span><br><span class="line">    <span class="hljs-keyword">if</span> i % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> i % <span class="hljs-number">3</span> != <span class="hljs-number">0</span>:</span><br><span class="line">        n += <span class="hljs-number">1</span></span><br><span class="line">print(n)</span><br></pre></td></tr></table></figure>
-
-<h5 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h5><p>a.语法：<br>while 条件语句：<br>&emsp;&emsp;循环体<br>b.说明：<br>while – 关键字<br>条件语句 – 只要有结果的表达式都可以（赋值语句不行）<br>循环体 – 和while保持一个缩进的一条或者多条的语句；（需要重复执行的代码放在循环体中）<br>c.执行过程<br>先判断条件语句是否为True，如果为True就执行循环体，执行完循环体再判断条件语句是否为True，<br>为True又执行循环体，以此类推，当判断条件语句的结果为False，整个循环结束，指向后面的其他语句</p>
-<h5 id="for和while循环怎么选"><a href="#for和while循环怎么选" class="headerlink" title="for和while循环怎么选"></a>for和while循环怎么选</h5><p>循环次数确定的时候使用for循环<br>循环次数不确定和死循环要使用while循环</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 练习：</span></span><br><span class="line">num = int(input(<span class="hljs-string">"please input a number:"</span>))</span><br><span class="line"><span class="hljs-keyword">while</span> num != <span class="hljs-number">0</span>:</span><br><span class="line">    num = int(input(<span class="hljs-string">"please input a number:"</span>))</span><br><span class="line">print(<span class="hljs-string">"ok"</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">account = int(input(<span class="hljs-string">"请输入账号："</span>))</span><br><span class="line">pwd = int(input(<span class="hljs-string">"请输入密码："</span>))</span><br><span class="line"><span class="hljs-keyword">while</span> account != <span class="hljs-number">666</span> <span class="hljs-keyword">or</span> pwd != <span class="hljs-number">123456</span>:</span><br><span class="line">    print(<span class="hljs-string">"账号或者密码错误!"</span>)</span><br><span class="line">    account = int(input(<span class="hljs-string">"请重新输入账号："</span>))</span><br><span class="line">    pwd = int(input(<span class="hljs-string">"请重新输入密码："</span>))</span><br><span class="line">    <span class="hljs-keyword">while</span> account == <span class="hljs-number">666</span> <span class="hljs-keyword">and</span> pwd == <span class="hljs-number">123456</span>:</span><br><span class="line">        print(<span class="hljs-string">"登录成功"</span>)</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 练习：输入数字，直到输入的数字是0，统计输入偶数的个数</span></span><br><span class="line">num = int(input(<span class="hljs-string">"please input number:"</span>))</span><br><span class="line">n = <span class="hljs-number">0</span></span><br><span class="line"><span class="hljs-keyword">while</span> num != <span class="hljs-number">0</span>:</span><br><span class="line">    <span class="hljs-keyword">if</span> num % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>:</span><br><span class="line">        n += <span class="hljs-number">1</span></span><br><span class="line">    num = int(input(<span class="hljs-string">"please input number:"</span>))</span><br><span class="line">print(n)</span><br></pre></td></tr></table></figure>
-
-<h5 id="continue："><a href="#continue：" class="headerlink" title="continue："></a>continue：</h5><p>continue是能出现在循环体中的关键字；<br>当执行循环体的时候遇到了continue，当次循环结束，执行进入下次循环的判断</p>
-<h5 id="break"><a href="#break" class="headerlink" title="break:"></a>break:</h5><p>只能用在循环体中的关键字<br>执行循环体的时候，如果遇到break，整个循环直接结束</p>
-<h5 id="else："><a href="#else：" class="headerlink" title="else："></a>else：</h5><p>for 变量 in 序列:<br>&emsp;&emsp;循环体<br>else:<br>&emsp;&emsp;代码段</p>
-<p>while 条件语句:<br>&emsp;&emsp;循环体<br>else:<br>&emsp;&emsp;代码段<br>执行过程：如果循环自然结束，else后面的代码段会执行，如果循环是因为遇到break而结束，<br>            else后面的代码段不会执行</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sum1 = <span class="hljs-number">1</span></span><br><span class="line">num = <span class="hljs-number">1</span></span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    num += <span class="hljs-number">1</span></span><br><span class="line">    sum1 += num</span><br><span class="line">    <span class="hljs-keyword">if</span> sum1 &gt;<span class="hljs-number">10000</span>:</span><br><span class="line">        print(num<span class="hljs-number">-1</span>)</span><br><span class="line">        print(sum1)</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):</span><br><span class="line">    print(i)</span><br><span class="line">    <span class="hljs-keyword">break</span></span><br><span class="line"><span class="hljs-keyword">else</span>:</span><br><span class="line">    print(<span class="hljs-string">"-------"</span>)</span><br><span class="line">print(<span class="hljs-string">"========="</span>)</span><br></pre></td></tr></table></figure>
-
-
+<h4 id="内存的开辟"><a href="#内存的开辟" class="headerlink" title="内存的开辟"></a>内存的开辟</h4><p>内存区间分为栈区间和堆区间；栈区间的内存自动开辟和自动释放，堆区间的内存需要程序员手动开辟和释放；<br>但是python已经将堆区间内存的开辟和释放自动化</p>
+<p>当每次给变量赋值的时候，系统先在堆区间中开辟空间将数据存起来，然后再将数据在堆中的地址存到变量中，变量存在堆区间</p>
+<p>数字和字符串数据在开辟空间的时候，会先检查内存中之前是否已经有这个数据，如果有直接使用之前的数据，没有才开辟新的空间保存数据</p>
+<h4 id="内存的释放"><a href="#内存的释放" class="headerlink" title="内存的释放"></a>内存的释放</h4><p>栈区间：全局栈区间在程序结束后销毁，函数栈区间在函数调用结束后销毁（自动）<br>堆区间：看一个对象是否销毁，就看这个对象的引用计数是否为0，如果一个对象的引用为0，这个对象就销毁（垃圾回收机制）<br>注意：python中针对对象的循环引用已经做了处理，程序员不需要写额外的代码来解决循环引起的问题</p>
+<h4 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h4><h5 id="from-enum-import-Enum"><a href="#from-enum-import-Enum" class="headerlink" title="from enum import Enum"></a>from enum import Enum</h5><h5 id="枚举的特点："><a href="#枚举的特点：" class="headerlink" title="枚举的特点："></a>枚举的特点：</h5><p>1、可以通过有意义的属性名直接显示数据<br>2、每个数据的值不能修改<br>3、有时候可以做到不同数据的值是唯一的</p>
 
         </div>
         
@@ -229,17 +215,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/列表/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">列表</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/变量与运算符/">
-                <span class="level-item">变量与运算符</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/面向对象/">
+                <span class="level-item">面向对象</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -367,6 +346,49 @@
 
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#运算符重载指的是在不同的类中实现同样的函数的运算符对应的函数">
+        <span class="has-mr-6">1</span>
+        <span>运算符重载指的是在不同的类中实现同样的函数的运算符对应的函数</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#类的对象默认情况下只支持">
+        <span class="has-mr-6">1.1</span>
+        <span>类的对象默认情况下只支持==, !=</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#浅拷贝和深拷贝">
+        <span class="has-mr-6">2</span>
+        <span>浅拷贝和深拷贝</span>
+        </a></li><li>
+        <a class="is-flex" href="#内存的开辟">
+        <span class="has-mr-6">3</span>
+        <span>内存的开辟</span>
+        </a></li><li>
+        <a class="is-flex" href="#内存的释放">
+        <span class="has-mr-6">4</span>
+        <span>内存的释放</span>
+        </a></li><li>
+        <a class="is-flex" href="#枚举">
+        <span class="has-mr-6">5</span>
+        <span>枚举</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#from-enum-import-Enum">
+        <span class="has-mr-6">5.1</span>
+        <span>from enum import Enum</span>
+        </a></li><li>
+        <a class="is-flex" href="#枚举的特点：">
+        <span class="has-mr-6">5.2</span>
+        <span>枚举的特点：</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 
@@ -750,7 +772,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="分支与循环" height="28">
+                    <img src="/images/logo.svg" alt="内存管理和拷贝" height="28">
                 
                 </a>
                 <p class="is-size-7">
