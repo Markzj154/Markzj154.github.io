@@ -10,19 +10,19 @@
 <title>Django数据查询 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="Django数据查询模型">
+    <meta name="description" content="模型">
 <meta name="keywords" content="Django">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django数据查询">
 <meta property="og:url" content="http://markzjlove.cn/Django数据查询/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="Django数据查询模型">
+<meta property="og:description" content="模型">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-02-24T12:49:37.512Z">
+<meta property="og:updated_time" content="2020-02-24T12:53:14.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django数据查询">
-<meta name="twitter:description" content="Django数据查询模型">
+<meta name="twitter:description" content="模型">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -159,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 744 个字)
+                    5 分钟 读完 (大约 739 个字)
                 </span>
                 
                 
@@ -172,7 +172,7 @@
             
         </h1>
         <div class="content">
-            <h3 id="Django数据查询"><a href="#Django数据查询" class="headerlink" title="Django数据查询"></a>Django数据查询</h3><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><a id="more"></a>
+            <h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><a id="more"></a>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models</span><br><span class="line"><span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> date</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># Create your models here.</span></span><br><span class="line"><span class="hljs-comment"># django框架为我们提供了ORM框架，可以根据代码自动生成数据表</span></span><br><span class="line"><span class="hljs-comment"># 1.定义模型类，修改models.py文件</span></span><br><span class="line"><span class="hljs-comment"># 2.进行数据迁移（在命令窗口执行）</span></span><br><span class="line"><span class="hljs-comment">#     2.1 生成迁移文件(python manage.py makemigrations)</span></span><br><span class="line"><span class="hljs-comment">#     2.2 执行迁移文件(python manage.py migrate)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># 定义图书模型类BookInfo</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfo</span><span class="hljs-params">(models.Model)</span>:</span></span><br><span class="line">    title = models.CharField(max_length=<span class="hljs-number">64</span>)  <span class="hljs-comment"># 书名</span></span><br><span class="line">    pubdate = models.DateField(auto_now_add=<span class="hljs-literal">True</span>)  <span class="hljs-comment"># 发布日期</span></span><br><span class="line">    read = models.IntegerField(default=<span class="hljs-number">0</span>)  <span class="hljs-comment"># 阅读量</span></span><br><span class="line">    comment = models.IntegerField(default=<span class="hljs-number">0</span>)  <span class="hljs-comment"># 评论量</span></span><br><span class="line">    is_delete = models.BooleanField(default=<span class="hljs-literal">False</span>)  <span class="hljs-comment"># 逻辑删除</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        <span class="hljs-keyword">return</span> self.title</span><br><span class="line"></span><br><span class="line">    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span></span><br><span class="line">        db_table = <span class="hljs-string">'book_info'</span></span><br><span class="line">        ordering = [<span class="hljs-string">'-pubdate'</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># 定义任务模型类PersonInfo</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonInfo</span><span class="hljs-params">(models.Model)</span>:</span></span><br><span class="line">    name = models.CharField(max_length=<span class="hljs-number">64</span>)  <span class="hljs-comment"># 姓名</span></span><br><span class="line">    gender = models.BooleanField(default=<span class="hljs-literal">True</span>)  <span class="hljs-comment"># 性别</span></span><br><span class="line">    is_delete = models.BooleanField(default=<span class="hljs-literal">False</span>)  <span class="hljs-comment"># 逻辑删除</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment"># 人物描述，数据库中字段可以为空，但后台管理页面的输入框不能为空</span></span><br><span class="line">    description = models.CharField(max_length=<span class="hljs-number">256</span>, null=<span class="hljs-literal">True</span>, blank=<span class="hljs-literal">False</span>)</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        <span class="hljs-keyword">return</span> self.name</span><br><span class="line"></span><br><span class="line">    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span></span><br><span class="line">        db_table = <span class="hljs-string">'person_info'</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="配置MySQL数据库日志"><a href="#配置MySQL数据库日志" class="headerlink" title="配置MySQL数据库日志"></a>配置MySQL数据库日志</h4><p>通过日志文件可以查看对数据库的操作记录，MySQL默认不产生日志文件，需要进行配置：</p>
