@@ -10,19 +10,19 @@
 <title>Django快速入门 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="使用虚拟环境的目的 避开多个项目之间python库的冲突 完整便捷导出python库的列表具体步骤安装virtualenv：pip install virtualenv">
+    <meta name="description" content="使用虚拟环境的目的 避开多个项目之间python库的冲突完整便捷导出python库的列表  具体步骤安装virtualenv：pip install virtualenv创建虚拟环境：virtualenv 虚拟环境的名称启动虚拟环境：Scripts\activate退出虚拟环境：deactivate 安装Django启动虚拟环境后，通过命令 pip install django 进行安装如果安装">
 <meta name="keywords" content="Django">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django快速入门">
 <meta property="og:url" content="http://markzjlove.cn/Django快速入门/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="使用虚拟环境的目的 避开多个项目之间python库的冲突 完整便捷导出python库的列表具体步骤安装virtualenv：pip install virtualenv">
+<meta property="og:description" content="使用虚拟环境的目的 避开多个项目之间python库的冲突完整便捷导出python库的列表  具体步骤安装virtualenv：pip install virtualenv创建虚拟环境：virtualenv 虚拟环境的名称启动虚拟环境：Scripts\activate退出虚拟环境：deactivate 安装Django启动虚拟环境后，通过命令 pip install django 进行安装如果安装">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-02-25T06:55:08.541Z">
+<meta property="og:updated_time" content="2020-03-10T05:25:12.644Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django快速入门">
-<meta name="twitter:description" content="使用虚拟环境的目的 避开多个项目之间python库的冲突 完整便捷导出python库的列表具体步骤安装virtualenv：pip install virtualenv">
+<meta name="twitter:description" content="使用虚拟环境的目的 避开多个项目之间python库的冲突完整便捷导出python库的列表  具体步骤安装virtualenv：pip install virtualenv创建虚拟环境：virtualenv 虚拟环境的名称启动虚拟环境：Scripts\activate退出虚拟环境：deactivate 安装Django启动虚拟环境后，通过命令 pip install django 进行安装如果安装">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -172,13 +172,11 @@
             
         </h1>
         <div class="content">
-            <h4 id="使用虚拟环境的目的"><a href="#使用虚拟环境的目的" class="headerlink" title="使用虚拟环境的目的"></a>使用虚拟环境的目的</h4><ol>
-<li>避开多个项目之间python库的冲突</li>
-<li>完整便捷导出python库的列表<h4 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h4>安装virtualenv：pip install virtualenv<a id="more"></a>
-
-</li>
-</ol>
-<p>创建虚拟环境：virtualenv 虚拟环境的名称<br>启动虚拟环境：Scripts\activate<br>退出虚拟环境：deactivate</p>
+            <a id="more"></a>
+<h4 id="使用虚拟环境的目的"><a href="#使用虚拟环境的目的" class="headerlink" title="使用虚拟环境的目的"></a>使用虚拟环境的目的</h4><blockquote>
+<p>避开多个项目之间python库的冲突<br>完整便捷导出python库的列表</p>
+</blockquote>
+<h4 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h4><p>安装virtualenv：pip install virtualenv<br>创建虚拟环境：virtualenv 虚拟环境的名称<br>启动虚拟环境：Scripts\activate<br>退出虚拟环境：deactivate</p>
 <h4 id="安装Django"><a href="#安装Django" class="headerlink" title="安装Django"></a>安装Django</h4><p>启动虚拟环境后，通过命令 pip install django 进行安装<br>如果安装超时，可以通过镜像(此处是豆瓣的镜像)安装：pip install django -i <a href="http://pypi.douban.com/simple" target="_blank" rel="noopener">http://pypi.douban.com/simple</a> –trusted-host pypi.douban.com<br>如果想要指定django的版本，直接在django后面接版本即可(如：django==2.0.7)</p>
 <h4 id="查看Django版本"><a href="#查看Django版本" class="headerlink" title="查看Django版本"></a>查看Django版本</h4><p>python -m django –version<br>django-admin –version</p>
 <h4 id="创建项目-blog"><a href="#创建项目-blog" class="headerlink" title="创建项目(blog)"></a>创建项目(blog)</h4><p>django-admin startproject blog<br>执行上面命令后，会生成相应的文件夹和文件，他们的作用如下：<br>manage.py：一个让你管理Django项目的工具程序<br>blog/__init__.py：一个空文件，告诉python解释器这个目录应该被视为一个python包<br>blog/settings.py：Django项目配置文件<br>blog/urls.py：Django项目的URL声明，就像是你的网站的目录<br>blog/wsgi.py：项目运行在WSGI兼容Web服务器上的接口文件</p>
