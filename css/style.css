@@ -55,7 +55,7 @@ textarea {
 }
 .card {
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7), 0 0 1px rgba(0,0,0,0.7);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.1);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -148,7 +148,7 @@ img.thumbnail {
 .pagination .pagination-link:not(.is-current),
 .pagination .pagination-previous,
 .pagination .pagination-next {
-  background: #fff;
+  background: #008000;
   border: none;
 }
 .pagination .pagination-link,
@@ -192,7 +192,7 @@ img.thumbnail {
   top: calc(1.3rem + 9px);
   width: 9px;
   bottom: 0;
-  background: #fff;
+  background: #008000;
 }
 .timeline .media:first-child:last-child:after {
   top: calc(0.3rem + 9px);
