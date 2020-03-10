@@ -5,7 +5,7 @@ html {
   font-size: 14px;
 }
 body {
-  background-color: #366b95;
+  background-color: #e6e6e6;
 }
 body,
 button,
@@ -51,7 +51,7 @@ textarea {
   }
 }
 .tag.is-grey {
-  background: #e7e7e7;
+  background: #e6e6e6;
 }
 .card {
   border-radius: 4px;
