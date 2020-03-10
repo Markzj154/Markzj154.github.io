@@ -5,8 +5,7 @@ html {
   font-size: 14px;
 }
 body {
-  background-image: url("/images/background_image2.jpg");
-  backgroud-repeat: no-repeat;
+  background-image: #000;
 }
 body,
 button,
@@ -64,7 +63,7 @@ textarea {
 }
 .card.card-transparent {
   box-shadow: none;
-  background: rgba(255,255,255,0.7);
+  background: transparent;
 }
 .card .card-image {
   overflow: hidden;
