@@ -10,19 +10,19 @@
 <title>面向对象基础 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="编程思想：面向过程编程、函数式编程、面向对象编程面向过程编程 – 算法和逻辑函数式编程 – 函数面向对象编程 – 类和对象 什么是类，什么是对象类就是拥有相同属性、相同功能的对象的集合（抽象的）对象就是类的实例（具体的）">
+    <meta name="description" content="编程思想：面向过程编程、函数式编程、面向对象编程">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面向对象基础">
 <meta property="og:url" content="http://markzjlove.cn/面向对象基础/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="编程思想：面向过程编程、函数式编程、面向对象编程面向过程编程 – 算法和逻辑函数式编程 – 函数面向对象编程 – 类和对象 什么是类，什么是对象类就是拥有相同属性、相同功能的对象的集合（抽象的）对象就是类的实例（具体的）">
+<meta property="og:description" content="编程思想：面向过程编程、函数式编程、面向对象编程">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-09T14:16:15.261Z">
+<meta property="og:updated_time" content="2020-03-10T10:39:59.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象基础">
-<meta name="twitter:description" content="编程思想：面向过程编程、函数式编程、面向对象编程面向过程编程 – 算法和逻辑函数式编程 – 函数面向对象编程 – 类和对象 什么是类，什么是对象类就是拥有相同属性、相同功能的对象的集合（抽象的）对象就是类的实例（具体的）">
+<meta name="twitter:description" content="编程思想：面向过程编程、函数式编程、面向对象编程">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -176,9 +176,9 @@
             
         </h1>
         <div class="content">
-            <h4 id="编程思想：面向过程编程、函数式编程、面向对象编程"><a href="#编程思想：面向过程编程、函数式编程、面向对象编程" class="headerlink" title="编程思想：面向过程编程、函数式编程、面向对象编程"></a>编程思想：面向过程编程、函数式编程、面向对象编程</h4><p>面向过程编程 – 算法和逻辑<br>函数式编程 – 函数<br>面向对象编程 – 类和对象</p>
+            <h4 id="编程思想：面向过程编程、函数式编程、面向对象编程"><a href="#编程思想：面向过程编程、函数式编程、面向对象编程" class="headerlink" title="编程思想：面向过程编程、函数式编程、面向对象编程"></a>编程思想：面向过程编程、函数式编程、面向对象编程</h4><a id="more"></a>
+<p>面向过程编程 – 算法和逻辑<br>函数式编程 – 函数<br>面向对象编程 – 类和对象</p>
 <h4 id="什么是类，什么是对象"><a href="#什么是类，什么是对象" class="headerlink" title="什么是类，什么是对象"></a>什么是类，什么是对象</h4><p>类就是拥有相同属性、相同功能的对象的集合（抽象的）<br>对象就是类的实例（具体的）</p>
-<a id="more"></a>
 <h4 id="类的声明-–-确定这个类共同的属性和功能是什么"><a href="#类的声明-–-确定这个类共同的属性和功能是什么" class="headerlink" title="类的声明 – 确定这个类共同的属性和功能是什么"></a>类的声明 – 确定这个类共同的属性和功能是什么</h4><p>1.语法：<br>class 类名:<br>&emsp;&emsp;类的说明文档<br>&emsp;&emsp;类的内容<br>2.说明：<br>class – 关键字<br>类名 – 要求：标识符，不能是关键字<br>        规范：a.首字母大写，采用驼峰式命名规范  b.见名知义  c.不能使用系统提供的函数名或者类名<br>类的说明文档 – 和函数说明文档一样<br>类的内容 – 主要包括含属性和方法（方法就是声明在类中的函数）</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span></span><br><span class="line">    <span class="hljs-string">"""</span></span><br><span class="line"><span class="hljs-string">    属性 --</span></span><br><span class="line"><span class="hljs-string">    方法 --</span></span><br><span class="line"><span class="hljs-string">    """</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">eat</span><span class="hljs-params">(self, food)</span>:</span></span><br><span class="line">        print(<span class="hljs-string">'人吃&#123;&#125;'</span>.format(food))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># 3、声明对象</span></span><br><span class="line"><span class="hljs-string">"""</span></span><br><span class="line"><span class="hljs-string">1）语法：</span></span><br><span class="line"><span class="hljs-string">对象 = 类()</span></span><br><span class="line"><span class="hljs-string"></span></span><br><span class="line"><span class="hljs-string">"""</span></span><br><span class="line">p1 = Person()  <span class="hljs-comment"># p1中存储的就是Person类的对象</span></span><br><span class="line">p2 = Person()  <span class="hljs-comment"># 同一个类可以创建多个对象</span></span><br></pre></td></tr></table></figure>
 

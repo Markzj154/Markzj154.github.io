@@ -10,19 +10,19 @@
 <title>内存管理和拷贝 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承">
+    <meta name="description" content="python的类支持多继承（让一个类同时继承多个类）；">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="内存管理和拷贝">
 <meta property="og:url" content="http://markzjlove.cn/内存管理和拷贝/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承">
+<meta property="og:description" content="python的类支持多继承（让一个类同时继承多个类）；">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-09T14:40:55.771Z">
+<meta property="og:updated_time" content="2020-03-10T10:38:40.290Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="内存管理和拷贝">
-<meta name="twitter:description" content="python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承">
+<meta name="twitter:description" content="python的类支持多继承（让一个类同时继承多个类）；">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -176,8 +176,9 @@
             
         </h1>
         <div class="content">
-            <p>python的类支持多继承（让一个类同时继承多个类）；多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段<br>和方法能被继承</p>
+            <p>python的类支持多继承（让一个类同时继承多个类）；</p>
 <a id="more"></a>
+<p>多继承的时候，子类只能继承第一个父类所有的属性和方法，后面的父类只有字段和方法能被继承</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span></span><br><span class="line">    num = <span class="hljs-number">100</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">        self.age = <span class="hljs-number">0</span></span><br><span class="line">        self.gender = <span class="hljs-string">'male'</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">    @classmethod</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func1</span><span class="hljs-params">(cls)</span>:</span></span><br><span class="line">        print(<span class="hljs-string">'动物类的类方法'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fly</span>:</span></span><br><span class="line">        name = <span class="hljs-string">'飞行'</span></span><br><span class="line">        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">            self.height = <span class="hljs-number">100</span></span><br><span class="line">            self.time = <span class="hljs-number">3</span></span><br><span class="line">            self.speed = <span class="hljs-number">80</span></span><br><span class="line"></span><br><span class="line">        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func2</span><span class="hljs-params">(self)</span>:</span></span><br><span class="line">            print(<span class="hljs-string">'飞行的对象方法'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bird</span><span class="hljs-params">(Animal, Fly)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">b = Bird()</span><br><span class="line">print(Bird.num, Bird.name)</span><br><span class="line"><span class="hljs-comment"># print(Bird.age, Bird.time)</span></span><br><span class="line">Bird.func1()</span><br><span class="line">print(b.age, b.gender)</span><br><span class="line"><span class="hljs-comment"># print(b.height)</span></span><br></pre></td></tr></table></figure>
 
 <p>python中所有的类型都是类，所以所有的数据都是对象<br>python中使用任意的运算符都是在调用相应类中的对应的方法，每一个运算符对应的什么方法是固定的<br>某种数据是否支持某个运算符操作就看这个数据类型中是否实现了对应的方法</p>

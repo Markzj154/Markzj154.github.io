@@ -10,19 +10,19 @@
 <title>异常和模块 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="异常运行程序的时候程序报错，又叫程序出现异常当执行程序的时候如果出现异常，出现异常的线程会直接崩溃，不会在执行线程中后面其他的代码 捕获异常1.语法一：try:&amp;emsp;&amp;emsp;代码块1">
+    <meta name="description" content="异常">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="异常和模块">
 <meta property="og:url" content="http://markzjlove.cn/异常和模块/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="异常运行程序的时候程序报错，又叫程序出现异常当执行程序的时候如果出现异常，出现异常的线程会直接崩溃，不会在执行线程中后面其他的代码 捕获异常1.语法一：try:&amp;emsp;&amp;emsp;代码块1">
+<meta property="og:description" content="异常">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-09T14:00:13.610Z">
+<meta property="og:updated_time" content="2020-03-10T10:40:41.725Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="异常和模块">
-<meta name="twitter:description" content="异常运行程序的时候程序报错，又叫程序出现异常当执行程序的时候如果出现异常，出现异常的线程会直接崩溃，不会在执行线程中后面其他的代码 捕获异常1.语法一：try:&amp;emsp;&amp;emsp;代码块1">
+<meta name="twitter:description" content="异常">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -176,10 +176,9 @@
             
         </h1>
         <div class="content">
-            <h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h4><p>运行程序的时候程序报错，又叫程序出现异常<br>当执行程序的时候如果出现异常，出现异常的线程会直接崩溃，不会在执行线程中后面其他的代码</p>
-<h4 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h4><p>1.语法一：<br>try:<br>&emsp;&emsp;代码块1</p>
-<a id="more"></a>
-<p>except:<br>&emsp;&emsp;代码块2<br>说明：<br>try，except – 关键字，固定写法<br>代码块1 – 和try保持一个缩进的的一条或多条语句<br>            需要捕获异常的代码<br>代码块2 – 和except保持一个缩进的一条或多条语句<br>            异常发生或会执行的代码</p>
+            <h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h4><a id="more"></a>
+<p>运行程序的时候程序报错，又叫程序出现异常<br>当执行程序的时候如果出现异常，出现异常的线程会直接崩溃，不会在执行线程中后面其他的代码</p>
+<h4 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h4><p>1.语法一：<br>try:<br>&emsp;&emsp;代码块1<br>except:<br>&emsp;&emsp;代码块2<br>说明：<br>try，except – 关键字，固定写法<br>代码块1 – 和try保持一个缩进的的一条或多条语句<br>            需要捕获异常的代码<br>代码块2 – 和except保持一个缩进的一条或多条语句<br>            异常发生或会执行的代码</p>
 <p>执行过程：先执行代码块1，如果在执行代码块1的时候出现了异常，程序不崩溃，直接执行代码块2，<br>          然后再执行后面的其他语句；如果在执行代码块1的时候没有出现异常，代码块2不会执行，<br>          直接执行后面的其他语句</p>
 <p>2.语法二：捕获指定异常<br>try:<br>&emsp;&emsp;代码块1<br>except 异常类型:<br>&emsp;&emsp;代码块2</p>
 <p>执行过程：先执行代码块1，如果执行代码块1的时候出现异常，检查异常类型和except后面的异常类型是否一致；<br>如果一致程序不崩溃，直接执行代码块2；如果不一致，程序直接崩溃；<br>如果执行代码块1的时候没有出现异常，不执行代码块2，接着往后执行</p>

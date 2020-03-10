@@ -10,19 +10,19 @@
 <title>文件操作 - 锦仙鑫小筑</title>
 
 
-    <meta name="description" content="数据持久化保存在程序中的数据是保存在运行内存中的，当程序运行结束时，内存会自动释放，数据也会消失；如果不希望数据随着程序的结束而消失，就需要将数据通过文件存储到硬盘里面程序中经常用来保存数据的文件有：数据库的文件（db, sqlite）；json文件；plist文件；txt文件；png文件；jpg文件；gif文件；…mp4文件；mov文件；mp3等… 文件操作1.步骤：打开文件 -&amp;gt; 操作文">
+    <meta name="description" content="数据持久化">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="文件操作">
 <meta property="og:url" content="http://markzjlove.cn/文件操作/index.html">
 <meta property="og:site_name" content="锦仙鑫小筑">
-<meta property="og:description" content="数据持久化保存在程序中的数据是保存在运行内存中的，当程序运行结束时，内存会自动释放，数据也会消失；如果不希望数据随着程序的结束而消失，就需要将数据通过文件存储到硬盘里面程序中经常用来保存数据的文件有：数据库的文件（db, sqlite）；json文件；plist文件；txt文件；png文件；jpg文件；gif文件；…mp4文件；mov文件；mp3等… 文件操作1.步骤：打开文件 -&amp;gt; 操作文">
+<meta property="og:description" content="数据持久化">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://markzjlove.cn/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-09T09:27:49.628Z">
+<meta property="og:updated_time" content="2020-03-10T10:41:07.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文件操作">
-<meta name="twitter:description" content="数据持久化保存在程序中的数据是保存在运行内存中的，当程序运行结束时，内存会自动释放，数据也会消失；如果不希望数据随着程序的结束而消失，就需要将数据通过文件存储到硬盘里面程序中经常用来保存数据的文件有：数据库的文件（db, sqlite）；json文件；plist文件；txt文件；png文件；jpg文件；gif文件；…mp4文件；mov文件；mp3等… 文件操作1.步骤：打开文件 -&amp;gt; 操作文">
+<meta name="twitter:description" content="数据持久化">
 <meta name="twitter:image" content="http://markzjlove.cn/images/og_image.png">
 
 
@@ -176,10 +176,9 @@
             
         </h1>
         <div class="content">
-            <h4 id="数据持久化"><a href="#数据持久化" class="headerlink" title="数据持久化"></a>数据持久化</h4><p>保存在程序中的数据是保存在运行内存中的，当程序运行结束时，内存会自动释放，数据也会消失；<br>如果不希望数据随着程序的结束而消失，就需要将数据通过文件存储到硬盘里面<br>程序中经常用来保存数据的文件有：数据库的文件（db, sqlite）；json文件；plist文件；txt文件；png文件；jpg文件；gif文件；…mp4文件；mov文件；mp3等…</p>
-<h4 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h4><p>1.步骤：打开文件 -&gt; 操作文件内容（读操作、写操作 -&gt; 关闭文件<br>a.打开文件：</p>
-<a id="more"></a>
-<p>open(file, mode=’r’, encoding=None) – 以指定的方式打开指定文件并且返回文件<br>说明：<br>file – 字符串；文件在电脑中的路径；路径可以写绝对路径也可以写相对路径；<br>        绝对路径 – 文件在电脑中的完整路径<br>        相对路径 – ./代表当前目录（./可以省略）<br>                    ../代表当前目录的上一级目录<br>                    …/代表当前目录的上一级目录的上一级目录<br>        当前目录指的是当前py文件所在的目录</p>
+            <h4 id="数据持久化"><a href="#数据持久化" class="headerlink" title="数据持久化"></a>数据持久化</h4><a id="more"></a>
+<p>保存在程序中的数据是保存在运行内存中的，当程序运行结束时，内存会自动释放，数据也会消失；<br>如果不希望数据随着程序的结束而消失，就需要将数据通过文件存储到硬盘里面<br>程序中经常用来保存数据的文件有：数据库的文件（db, sqlite）；json文件；plist文件；txt文件；png文件；jpg文件；gif文件；…mp4文件；mov文件；mp3等…</p>
+<h4 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h4><p>1.步骤：打开文件 -&gt; 操作文件内容（读操作、写操作 -&gt; 关闭文件<br>a.打开文件：<br>open(file, mode=’r’, encoding=None) – 以指定的方式打开指定文件并且返回文件<br>说明：<br>file – 字符串；文件在电脑中的路径；路径可以写绝对路径也可以写相对路径；<br>        绝对路径 – 文件在电脑中的完整路径<br>        相对路径 – ./代表当前目录（./可以省略）<br>                    ../代表当前目录的上一级目录<br>                    …/代表当前目录的上一级目录的上一级目录<br>        当前目录指的是当前py文件所在的目录</p>
 <p>mode – 字符串；文件的打开方式，决定打开文件后能够对文件做什么以及读写的数据类型<br>        ‘r’/‘rt’    – 只能以读取的方式打开文件，读出来的内容是字符串<br>        ‘rb’ – 以只读的方式打开文件，读出来的内容是二进制数据(bytes)<br>        ‘w’/‘wt’ – 以只写的方式打开文件，将字符串写入文件；会清空原文件<br>        ‘wb’ – 以只写的方式打开文件，将二进制写入文件<br>        ‘a’/‘at’ – 以只写的方式打开文件，将字符串写入文件，不会清空原文件，追加<br> ‘ab’ – 以只写的方式打开文件，将二进制写入文件；不会清空原文件，追加<br>encoding – 字符串；设置文本的编码方式（只针对文本文件有效）；一般使用’utf-8’</p>
 <h5 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h5><p>1.同一个文件读和写的编码方式一样<br>2.只针对文本文件有效，所有带’b’的打开方式都不能设置encoding<br>b.关闭文件<br>文件对象.close()<br> <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># open(r'D:\zj.python\day12-文件操作和异常处理\test1.txt')  # 绝对路径</span></span><br><span class="line"><span class="hljs-comment"># open(r'./test1.txt') # 相对路径</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="读写操作"><a href="#读写操作" class="headerlink" title="读写操作"></a>读写操作</h4><p>1.读操作<br>文件对象.read() – 读取整个文件内容，以字符串或者二进制的形式放返回<br>文件对象.readline() – 获取文本文件中一行的内容，以字符串或者二进制的形式返回<br>2.写操作<br>文件.write(内容) – 将内容写到指定的文件中</p>
@@ -200,6 +199,8 @@
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># result = json.loads('100')</span></span><br><span class="line"><span class="hljs-comment"># print(type(result), result)</span></span><br><span class="line"><span class="hljs-comment"># result = json.loads('"hello"')</span></span><br><span class="line"><span class="hljs-comment"># print(type(result), result)</span></span><br><span class="line"><span class="hljs-comment"># result = json.loads('true')</span></span><br><span class="line"><span class="hljs-comment"># print(type(result), result)</span></span><br><span class="line"><span class="hljs-comment"># result = json.loads('["hello", 123, false, null]')</span></span><br><span class="line"><span class="hljs-comment"># print(result)</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="将python数据转换成json"><a href="#将python数据转换成json" class="headerlink" title="将python数据转换成json"></a>将python数据转换成json</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1）转换关系</span><br><span class="line">python                        json</span><br><span class="line">int/float                     数字</span><br><span class="line">str                           字符串，引号全部变成双引号</span><br><span class="line">bool                          布尔，True -&gt; true; False -&gt;false</span><br><span class="line">list、tuple                   数组</span><br><span class="line">dict                          字典</span><br><span class="line">None                          null</span><br><span class="line">2)转换的方法</span><br><span class="line">dumps(数据) -- 将括号中的python数据转换成json格式的字符串</span><br></pre></td></tr></table></figure>
+
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
