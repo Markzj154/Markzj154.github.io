@@ -55,7 +55,7 @@ textarea {
 }
 .card {
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7), 0 0 1px rgba(0,0,0,0.7);
+  box-shadow: 0 4px 10px rgba(255,255,255,0.7), 0 0 1px rgba(255,255,255,0.7);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -154,7 +154,7 @@ img.thumbnail {
 .pagination .pagination-link,
 .pagination .pagination-previous,
 .pagination .pagination-next {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(255,255,255,0.05);
 }
 .post-navigation {
   justify-content: space-around;
