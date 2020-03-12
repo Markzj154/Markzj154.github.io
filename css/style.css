@@ -4,6 +4,9 @@
 html {
   font-size: 14px;
 }
+body {
+  background-color: #fff;
+}
 body,
 button,
 input,
