@@ -80,7 +80,7 @@ img.thumbnail {
   max-height: 1.75rem;
 }
 .navbar-main {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(255,255,255,0.5);
 }
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,
