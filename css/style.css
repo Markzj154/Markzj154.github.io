@@ -55,7 +55,7 @@ textarea {
 }
 .card {
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(255,255,255,0.7), 0 0 1px rgba(255,255,255,0.7);
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1), 0 0 1px rgba(255,255,255,0.1);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -80,7 +80,7 @@ img.thumbnail {
   max-height: 1.75rem;
 }
 .navbar-main {
-  box-shadow: 0 4px 10px rgba(255,255,255,0.5);
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
 }
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,
@@ -125,7 +125,7 @@ img.thumbnail {
   }
 }
 .footer {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.1);
 }
 .footer .field .button {
   background: transparent;
@@ -148,7 +148,7 @@ img.thumbnail {
 .pagination .pagination-link:not(.is-current),
 .pagination .pagination-previous,
 .pagination .pagination-next {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.1);
   border: none;
 }
 .pagination .pagination-link,
